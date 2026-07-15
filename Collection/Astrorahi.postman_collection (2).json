@@ -1,0 +1,2911 @@
+{
+	"info": {
+		"_postman_id": "6d444236-29f3-4f62-a7e9-dda15088d88a",
+		"name": "Astrorahi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "user_login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile_no",
+									"value": "7275163487",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "fsdf1",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "sdfdsf23",
+									"type": "text"
+								},
+								{
+									"key": "device_name",
+									"value": "fsdfdsf2",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "dsfsf",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "longtitude",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/user_verify_otp"
+					},
+					"response": []
+				},
+				{
+					"name": "user_verify_otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "76",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "5382",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/user_verify_otp"
+					},
+					"response": []
+				},
+				{
+					"name": "signup_save_profile",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "76",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "sssssdfsfsdf",
+									"type": "default"
+								},
+								{
+									"key": "dob",
+									"value": "1994-01-11",
+									"type": "default"
+								},
+								{
+									"key": "address",
+									"value": "sadadaddsa",
+									"type": "default"
+								},
+								{
+									"key": "gender",
+									"value": "1",
+									"description": "1-Male,2-Female",
+									"type": "default"
+								},
+								{
+									"key": "birth_time",
+									"value": "18:18:47",
+									"type": "default"
+								},
+								{
+									"key": "birth_place",
+									"value": "fdg dfgdfgdfgd",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/signup_save_profile"
+					},
+					"response": []
+				},
+				{
+					"name": "user_home",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjcyMjdhZTA0Njc3MjIxODI2MDE4ODkwNmUxNjkxOGZiN2Y3ZGQxMWNkNzdjNjMyNDk3ZjlhODYzZjI4OTdlMTgwYWU4NDI4ZDg2ZTFkNjQiLCJpYXQiOjE2NzQxMTExOTQuMDE2MzgyOTMyNjYyOTYzODY3MTg3NSwibmJmIjoxNjc0MTExMTk0LjAxNjM4Njk4NTc3ODgwODU5Mzc1LCJleHAiOjE3MDU2NDcxOTMuOTk5MzY4OTA2MDIxMTE4MTY0MDYyNSwic3ViIjoiNjIiLCJzY29wZXMiOltdfQ.hQZ8b6iQeyGSMGm9UmYfcGrFcKLYyJ311046LkFhNmlVddHfQA7oYAPqSBpaQfrI0VPDeY0KQG19aJikmDEseFDwmyKYzUHbEYXgrxOTjPtbSz96_4pIyATNWTHtXKuvlUtjHKzMB5mMvTUbDwEoklVydJ1Vr2RirgIAlgFM9pawCQlqb10he7V2HN-8o3I35gsA2PpmYJAKgZV6QJmGnXAPj3jBczpyTSXCKO2IegbmBa5jx4VN-cI9GD8ocoYeE7T_VtD3jN2JhEyFIdI0ubPlqHZmH-wBzkxkkWPIWzMWpyvQrOuEVmKu4XMlKuv55MILYpp9OOAwND4Ym5KGv4C6t3Txj46ZmUGzhIZ940OjIIND8sGMsJOtjCXDHfIQOWrFBO8fO7VxQQ7h86158L6jFlsQ_RAeZ7JOBUWacfXD9H9aeE9KWC2wuDsR0lJ1UNh39wepzK1s6VvRWd0xA54J9zgpC3rh3KXI__-InQRwA3o1RFmuZzE_y5iCzGWGKfRb4ND5CqCTLRq3gfpZj3_WjQKVSGM_1-Djx3P1h8mEMWgqvWPXPxfYPhJ93XZP83mGpF2VNwG3cvQuz5ZNJ6jndgyf6CzYZ9hQRjqsjd00Tb8vrgf4grW13TogpahWPtd4y4K3rM9fOaitR189BG2ssmEWUH2a9hIen8sm4hY"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/user_home"
+					},
+					"response": []
+				},
+				{
+					"name": "live_strologers",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/live_strologers"
+					},
+					"response": []
+				},
+				{
+					"name": "strologers_list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/strologers_list"
+					},
+					"response": []
+				},
+				{
+					"name": "product_category_list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/product_category_list"
+					},
+					"response": []
+				},
+				{
+					"name": "strologer_details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/strologer_details"
+					},
+					"response": []
+				},
+				{
+					"name": "strologer_availability",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/strologer_availability"
+					},
+					"response": []
+				},
+				{
+					"name": "search",
+					"protocolProfileBehavior": {
+						"maxRedirects": 0
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "keys",
+									"value": "s",
+									"type": "text"
+								},
+								{
+									"key": "expertise_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "sort_filter",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/search"
+					},
+					"response": []
+				},
+				{
+					"name": "get_sort_filter_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/get_sort_filter_list"
+					},
+					"response": []
+				},
+				{
+					"name": "add_user_details_first",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dob",
+									"value": "1994-11-22",
+									"type": "text"
+								},
+								{
+									"key": "birth_time",
+									"value": "17:31:15",
+									"type": "text"
+								},
+								{
+									"key": "place_birth",
+									"value": "Bihar",
+									"type": "text"
+								},
+								{
+									"key": "occupation",
+									"value": "cccupation",
+									"type": "text"
+								},
+								{
+									"key": "maritial_status",
+									"value": "No",
+									"type": "text"
+								},
+								{
+									"key": "topic_consultation",
+									"value": "ASDDSADDa",
+									"type": "text"
+								},
+								{
+									"key": "language_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "astro_id",
+									"value": "68",
+									"type": "default"
+								},
+								{
+									"key": "request_type",
+									"value": "1",
+									"description": "1-Chat Requests,2-Call Requests, 3-Video Call Request",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_user_details_first"
+					},
+					"response": []
+				},
+				{
+					"name": "add_user_details_second",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "dob_boy",
+									"value": "1994-11-22",
+									"type": "text"
+								},
+								{
+									"key": "birth_time_boy",
+									"value": "13:31:15",
+									"type": "text"
+								},
+								{
+									"key": "place_birth_boy",
+									"value": "Bihar",
+									"type": "text"
+								},
+								{
+									"key": "occupation_boy",
+									"value": "SDDDDD",
+									"type": "text"
+								},
+								{
+									"key": "maritial_status_boy",
+									"value": "No",
+									"type": "text"
+								},
+								{
+									"key": "topic_consultation_boy",
+									"value": "DASDADDS",
+									"type": "text"
+								},
+								{
+									"key": "dob_girl",
+									"value": "1998-11-22",
+									"type": "text"
+								},
+								{
+									"key": "birth_time_girl",
+									"value": "10:31:15",
+									"type": "text"
+								},
+								{
+									"key": "place_birth_girl",
+									"value": "Gopalganj",
+									"type": "text"
+								},
+								{
+									"key": "occupation_girl",
+									"value": "DSDSSFd",
+									"type": "text"
+								},
+								{
+									"key": "maritial_status_girl",
+									"value": "No",
+									"type": "text"
+								},
+								{
+									"key": "topic_consultation_girl",
+									"value": "SDFSFSDF",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_user_details_second"
+					},
+					"response": []
+				},
+				{
+					"name": "category_product_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/category_product_list"
+					},
+					"response": []
+				},
+				{
+					"name": "category_product_search",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "keys",
+									"value": "Amethyst",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/category_product_search"
+					},
+					"response": []
+				},
+				{
+					"name": "product_deatil",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/product_deatil"
+					},
+					"response": []
+				},
+				{
+					"name": "add_address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "full_name",
+									"value": "Shahbaz ali2",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "88047597",
+									"type": "text"
+								},
+								{
+									"key": "house_no",
+									"value": "Aggarwal Appartment D-25",
+									"type": "text"
+								},
+								{
+									"key": "area",
+									"value": "B block - 45, Greater Noida",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "503",
+									"type": "text"
+								},
+								{
+									"key": "pincode",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "address_type",
+									"value": "1",
+									"description": "1-Home,2-Office",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_address"
+					},
+					"response": []
+				},
+				{
+					"name": "address_list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/address_list"
+					},
+					"response": []
+				},
+				{
+					"name": "address_detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/address_detail"
+					},
+					"response": []
+				},
+				{
+					"name": "update_address",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "full_name",
+									"value": "Shahbaz ali",
+									"type": "text"
+								},
+								{
+									"key": "phone_no",
+									"value": "88047597",
+									"type": "text"
+								},
+								{
+									"key": "house_no",
+									"value": "Aggarwal Appartment D-25",
+									"type": "text"
+								},
+								{
+									"key": "area",
+									"value": "B block - 45, Greater Noida",
+									"type": "text"
+								},
+								{
+									"key": "state",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "503",
+									"type": "text"
+								},
+								{
+									"key": "pincode",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "address_type",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/update_address"
+					},
+					"response": []
+				},
+				{
+					"name": "order_detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "address_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/order_detail"
+					},
+					"response": []
+				},
+				{
+					"name": "coupon_apply",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "amount",
+									"value": "100",
+									"type": "text"
+								},
+								{
+									"key": "coupon_code",
+									"value": "Coupon#123@",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/coupon_apply"
+					},
+					"response": []
+				},
+				{
+					"name": "add_bank_card",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "account_holder",
+									"value": "Sanjeet",
+									"type": "text"
+								},
+								{
+									"key": "card_no",
+									"value": "7847 5654 8980",
+									"type": "text"
+								},
+								{
+									"key": "expiry_date",
+									"value": "12/22",
+									"type": "text"
+								},
+								{
+									"key": "cvv",
+									"value": "737",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_bank_card"
+					},
+					"response": []
+				},
+				{
+					"name": "bank_card_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/bank_card_list"
+					},
+					"response": []
+				},
+				{
+					"name": "bank_card_detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/bank_card_detail"
+					},
+					"response": []
+				},
+				{
+					"name": "update_bank_card",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "account_holder",
+									"value": "Sanjeet",
+									"type": "text"
+								},
+								{
+									"key": "card_no",
+									"value": "7847 5654 8980",
+									"type": "text"
+								},
+								{
+									"key": "expiry_date",
+									"value": "12/22",
+									"type": "text"
+								},
+								{
+									"key": "cvv",
+									"value": "737",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/update_bank_card"
+					},
+					"response": []
+				},
+				{
+					"name": "update_user_profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGUyOGFmMTg3ZWIxODNhZmFmMWRlY2QwYWVlOTRlMTM5MzViMzk5NzI2ZDMzNjg0YmIxNmVlNWMxYzFiOTE3MzI2NmE5ZTNiNzIxYzg3Y2YiLCJpYXQiOjE2NzM0MTQ1OTkuNTEyMjI3MDU4NDEwNjQ0NTMxMjUsIm5iZiI6MTY3MzQxNDU5OS41MTIyMzMwMTg4NzUxMjIwNzAzMTI1LCJleHAiOjE3MDQ5NTA1OTkuNDkwOTk4OTgzMzgzMTc4NzEwOTM3NSwic3ViIjoiNTEiLCJzY29wZXMiOltdfQ.rOAnG7LYaSa0KZig01S2hkXtCHu0oSY3wPU6fxnaL0ZnL6Yus5lWUeG44hPFsS4FmV9oIm8XFvvTuAwthBfZ5m1ZWARjyg1zp82uPHFTjV--Px2_7-MmrUMZEf4aG3slTvfN6p2LOffVyo1VvivCklKckXxpEfxVc1PyZnoPdMZKG9WcOGbkCDg4kfn9iKkqPi1DJFETdCVXkM1jLJCA0nlRRYUJ-KyppuIQe_uIH3coY_ACZ9InbQaqT0FdBGN38YxEKn6HHgf4j0Iyc1mdRXQH6ocY8bFU2R27buaZF2N6yBbpBKgSjjMrG8a5qRzEpm3FM5tO7cKuqpoDTxFD96UMliPNe-8w1xs_e9bZMEpPz8MObc_S7ysSlnzg6zRZTOsWN-YdxOxdAuP7F3a2vWPkNFhi_KTqFWgE2xn7rUzgj0VHRTWJDxcx3L96z12Zzv7IPp1XS_ktG_8OPMXMSrGDX-xHlMQ0Sai7iG3DjSe7zJ-eI6uplwrKlBYgwXlDDMevyL5OZxVO5vgK8PeUDGfmYCDUTaAojRriwGUI3v9sV4ersjgDifZhVZ0Tu7wvPGlQt0RimA18VwjZ_BTitUGjUmnJ2CSfYsMUziAtFVaLne9SjbCF2gIciinIdTOXniUukjB99-_NaG6K1MjNEJOl3i3a8OGYRz3G58jI-0I"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ss",
+									"type": "default"
+								},
+								{
+									"key": "mobile_no",
+									"value": "8989898989",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "sss2@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "dob",
+									"value": "1994-08-02",
+									"type": "default"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": "/home/oem/Pictures/aaaaimages.jpeg"
+								},
+								{
+									"key": "gender",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/update_user_profile"
+					},
+					"response": []
+				},
+				{
+					"name": "home_call_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzE4MzMzZjUxMDZjMzI1ODczZWNlODEwOWFiMTk1OTA4NWFlMDJiYzc3YjZmMmE4OTY4MDUwNzZmZTllMDBlYTI2Y2UwZjM4MWJkNWNmODgiLCJpYXQiOjE2NzA1ODU3MDcuNjUzMzc0OTEwMzU0NjE0MjU3ODEyNSwibmJmIjoxNjcwNTg1NzA3LjY1MzM3ODAwOTc5NjE0MjU3ODEyNSwiZXhwIjoxNzAyMTIxNzA3LjY0OTc5MjkwOTYyMjE5MjM4MjgxMjUsInN1YiI6IjYiLCJzY29wZXMiOltdfQ.sSC2VaIzEC95lzFAt8HXCmngXSBDas-CoXh61ChUek1g13SHRh-qySHoc_S-xHAW9rIWRV_r63lIT56Y7CFRx4BR8jK9qMsBu_GHjRhZbklwEA6OljzzgMpdwkoVzM1P-6H9WgJZORoi9s_zWrnbFL-HfEpRxRDPAfH1PXowMTGs1gZub4iQnlwHhbN6pUlxcd4mlgj2hVqdj280GlJR4yaLQO4O0UVWxB74g31f_UDgvCE141Kd1zKKFns3yu8qabuhyhzwhV_wOesdjhv9j0A5bgUX2QpUyW6F6s0PnkK_eLHm0v7erDxiqpc9MoSbzUKa3X8wUYTsZNmp9I81eLEEefGGfB6SiDNDr-danT_4xUx3OyfsPOvLcedCXiwiS9UCJbapOijAdgMns4Ksww03P5yBF4z-DUix7ZPva_AC6UdUu0UAAfMzkQ9MPtN_ZH1aIf3YGzw-6A4E-qiP8ZZPbCKzmkdp_3dj32WPEw_ynb0MO-TpDOSAQl359g6M9_IOUyifpKZkR00rqx1PCye4lX0Nx_bcLiAgWuvViSLaoQwz8kCGEsdyB658eMlEjRgYHG56fPJj2wfatvB8B3u9jb4vq4oILhc8t50qgT9Pxe2eV3S67_WPY_ADAsXOa-OXzpSTJUstrnylbPf5AAFbGv1nw3rZc_tKq5FWclY"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "keys",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "expertise_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sort_filter",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/home_call_list"
+					},
+					"response": []
+				},
+				{
+					"name": "home_chat_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGUyOGFmMTg3ZWIxODNhZmFmMWRlY2QwYWVlOTRlMTM5MzViMzk5NzI2ZDMzNjg0YmIxNmVlNWMxYzFiOTE3MzI2NmE5ZTNiNzIxYzg3Y2YiLCJpYXQiOjE2NzM0MTQ1OTkuNTEyMjI3MDU4NDEwNjQ0NTMxMjUsIm5iZiI6MTY3MzQxNDU5OS41MTIyMzMwMTg4NzUxMjIwNzAzMTI1LCJleHAiOjE3MDQ5NTA1OTkuNDkwOTk4OTgzMzgzMTc4NzEwOTM3NSwic3ViIjoiNTEiLCJzY29wZXMiOltdfQ.rOAnG7LYaSa0KZig01S2hkXtCHu0oSY3wPU6fxnaL0ZnL6Yus5lWUeG44hPFsS4FmV9oIm8XFvvTuAwthBfZ5m1ZWARjyg1zp82uPHFTjV--Px2_7-MmrUMZEf4aG3slTvfN6p2LOffVyo1VvivCklKckXxpEfxVc1PyZnoPdMZKG9WcOGbkCDg4kfn9iKkqPi1DJFETdCVXkM1jLJCA0nlRRYUJ-KyppuIQe_uIH3coY_ACZ9InbQaqT0FdBGN38YxEKn6HHgf4j0Iyc1mdRXQH6ocY8bFU2R27buaZF2N6yBbpBKgSjjMrG8a5qRzEpm3FM5tO7cKuqpoDTxFD96UMliPNe-8w1xs_e9bZMEpPz8MObc_S7ysSlnzg6zRZTOsWN-YdxOxdAuP7F3a2vWPkNFhi_KTqFWgE2xn7rUzgj0VHRTWJDxcx3L96z12Zzv7IPp1XS_ktG_8OPMXMSrGDX-xHlMQ0Sai7iG3DjSe7zJ-eI6uplwrKlBYgwXlDDMevyL5OZxVO5vgK8PeUDGfmYCDUTaAojRriwGUI3v9sV4ersjgDifZhVZ0Tu7wvPGlQt0RimA18VwjZ_BTitUGjUmnJ2CSfYsMUziAtFVaLne9SjbCF2gIciinIdTOXniUukjB99-_NaG6K1MjNEJOl3i3a8OGYRz3G58jI-0I"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "keys",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "expertise_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sort_filter",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/home_chat_list"
+					},
+					"response": []
+				},
+				{
+					"name": "user_profile2",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGUyOGFmMTg3ZWIxODNhZmFmMWRlY2QwYWVlOTRlMTM5MzViMzk5NzI2ZDMzNjg0YmIxNmVlNWMxYzFiOTE3MzI2NmE5ZTNiNzIxYzg3Y2YiLCJpYXQiOjE2NzM0MTQ1OTkuNTEyMjI3MDU4NDEwNjQ0NTMxMjUsIm5iZiI6MTY3MzQxNDU5OS41MTIyMzMwMTg4NzUxMjIwNzAzMTI1LCJleHAiOjE3MDQ5NTA1OTkuNDkwOTk4OTgzMzgzMTc4NzEwOTM3NSwic3ViIjoiNTEiLCJzY29wZXMiOltdfQ.rOAnG7LYaSa0KZig01S2hkXtCHu0oSY3wPU6fxnaL0ZnL6Yus5lWUeG44hPFsS4FmV9oIm8XFvvTuAwthBfZ5m1ZWARjyg1zp82uPHFTjV--Px2_7-MmrUMZEf4aG3slTvfN6p2LOffVyo1VvivCklKckXxpEfxVc1PyZnoPdMZKG9WcOGbkCDg4kfn9iKkqPi1DJFETdCVXkM1jLJCA0nlRRYUJ-KyppuIQe_uIH3coY_ACZ9InbQaqT0FdBGN38YxEKn6HHgf4j0Iyc1mdRXQH6ocY8bFU2R27buaZF2N6yBbpBKgSjjMrG8a5qRzEpm3FM5tO7cKuqpoDTxFD96UMliPNe-8w1xs_e9bZMEpPz8MObc_S7ysSlnzg6zRZTOsWN-YdxOxdAuP7F3a2vWPkNFhi_KTqFWgE2xn7rUzgj0VHRTWJDxcx3L96z12Zzv7IPp1XS_ktG_8OPMXMSrGDX-xHlMQ0Sai7iG3DjSe7zJ-eI6uplwrKlBYgwXlDDMevyL5OZxVO5vgK8PeUDGfmYCDUTaAojRriwGUI3v9sV4ersjgDifZhVZ0Tu7wvPGlQt0RimA18VwjZ_BTitUGjUmnJ2CSfYsMUziAtFVaLne9SjbCF2gIciinIdTOXniUukjB99-_NaG6K1MjNEJOl3i3a8OGYRz3G58jI-0I"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/user_profile2"
+					},
+					"response": []
+				},
+				{
+					"name": "user_wallet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/user_wallet"
+					},
+					"response": []
+				},
+				{
+					"name": "customer_support_email",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGUyOGFmMTg3ZWIxODNhZmFmMWRlY2QwYWVlOTRlMTM5MzViMzk5NzI2ZDMzNjg0YmIxNmVlNWMxYzFiOTE3MzI2NmE5ZTNiNzIxYzg3Y2YiLCJpYXQiOjE2NzM0MTQ1OTkuNTEyMjI3MDU4NDEwNjQ0NTMxMjUsIm5iZiI6MTY3MzQxNDU5OS41MTIyMzMwMTg4NzUxMjIwNzAzMTI1LCJleHAiOjE3MDQ5NTA1OTkuNDkwOTk4OTgzMzgzMTc4NzEwOTM3NSwic3ViIjoiNTEiLCJzY29wZXMiOltdfQ.rOAnG7LYaSa0KZig01S2hkXtCHu0oSY3wPU6fxnaL0ZnL6Yus5lWUeG44hPFsS4FmV9oIm8XFvvTuAwthBfZ5m1ZWARjyg1zp82uPHFTjV--Px2_7-MmrUMZEf4aG3slTvfN6p2LOffVyo1VvivCklKckXxpEfxVc1PyZnoPdMZKG9WcOGbkCDg4kfn9iKkqPi1DJFETdCVXkM1jLJCA0nlRRYUJ-KyppuIQe_uIH3coY_ACZ9InbQaqT0FdBGN38YxEKn6HHgf4j0Iyc1mdRXQH6ocY8bFU2R27buaZF2N6yBbpBKgSjjMrG8a5qRzEpm3FM5tO7cKuqpoDTxFD96UMliPNe-8w1xs_e9bZMEpPz8MObc_S7ysSlnzg6zRZTOsWN-YdxOxdAuP7F3a2vWPkNFhi_KTqFWgE2xn7rUzgj0VHRTWJDxcx3L96z12Zzv7IPp1XS_ktG_8OPMXMSrGDX-xHlMQ0Sai7iG3DjSe7zJ-eI6uplwrKlBYgwXlDDMevyL5OZxVO5vgK8PeUDGfmYCDUTaAojRriwGUI3v9sV4ersjgDifZhVZ0Tu7wvPGlQt0RimA18VwjZ_BTitUGjUmnJ2CSfYsMUziAtFVaLne9SjbCF2gIciinIdTOXniUukjB99-_NaG6K1MjNEJOl3i3a8OGYRz3G58jI-0I"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/customer_support_email"
+					},
+					"response": []
+				},
+				{
+					"name": "remedy_suggested",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGNmMzAwZGEyZGRmMTkxNjJhMGMwY2RlYTE1ZWZhZmY0N2VjNjI5ZGIzNTc5MDQ4YTk0YzVjMjM2YjdhMmMzYzQ1ZjRmZjllYjU0MDdlNjMiLCJpYXQiOjE2NzM0MzMwMTQuMjk4MzQzODk2ODY1ODQ0NzI2NTYyNSwibmJmIjoxNjczNDMzMDE0LjI5ODM0ODkwMzY1NjAwNTg1OTM3NSwiZXhwIjoxNzA0OTY5MDE0LjI0NDM2OTk4MzY3MzA5NTcwMzEyNSwic3ViIjoiNjIiLCJzY29wZXMiOltdfQ.ZSj4yXb-vlUZjghfazcLgBOh8r18aSVEtyFOftNE5Wgpj7ubCKn3FfwlXigEjIInHnFQ04caLVr5yplvLB4Spg22zNjdLcdPcbm3N_xl-wHkmSgZr2Ra0p7egFATb0UinIPOxi6padPDyZhbh78xD7Ok_lC0NUjaImWs-uKTWNLu6IirCJ46pfo8AEp4ixRED5hYceQcgoaMQvGHBIHoLltfp2i44XzgfsODxWZwfo2wyRNq4VwjJPbGAfLC0Uya6W6XhdPZBqRyul3rRbNB74JdnBX2uc15ZHNqW1qLd8OxuLHzQNP67r32G1zQY7kfJ4WaxVouhXKrvN1Ly_2w4DT8FfzXVqT5fjz4hvv2b101goxOta4Ar06lcnGrOJQ6-dkxqLSiRU6oRLjL9SF3Z98WIn_hlX6Tci7OP509Roq0SQ8VKItOegxmtxwtdoPGPMp0pkukXNfeHPJrNXqpf85YPdD__wszQPsmBcjSWDzbNAAt6Z-m_PEnBmLwoeSRuG2tJ0PryBT09BaVR5XuOr3O1M4VHtw7gn8rcp5EDRK5qfpRsl4AHR_hj4NuP2XwG9E_I9iIj7J-OkIhU6fk9LsZ-7Z-R8Ju4vzV1VvjIfs4b8AhitPDh-W_AUAcTZ4P7i45F66onTrJhdpqcPZ_EYIDbJi6lun5O2NvV8E3vik"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/remedy_suggested"
+					},
+					"response": []
+				},
+				{
+					"name": "user_my_reveiw",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGUyOGFmMTg3ZWIxODNhZmFmMWRlY2QwYWVlOTRlMTM5MzViMzk5NzI2ZDMzNjg0YmIxNmVlNWMxYzFiOTE3MzI2NmE5ZTNiNzIxYzg3Y2YiLCJpYXQiOjE2NzM0MTQ1OTkuNTEyMjI3MDU4NDEwNjQ0NTMxMjUsIm5iZiI6MTY3MzQxNDU5OS41MTIyMzMwMTg4NzUxMjIwNzAzMTI1LCJleHAiOjE3MDQ5NTA1OTkuNDkwOTk4OTgzMzgzMTc4NzEwOTM3NSwic3ViIjoiNTEiLCJzY29wZXMiOltdfQ.rOAnG7LYaSa0KZig01S2hkXtCHu0oSY3wPU6fxnaL0ZnL6Yus5lWUeG44hPFsS4FmV9oIm8XFvvTuAwthBfZ5m1ZWARjyg1zp82uPHFTjV--Px2_7-MmrUMZEf4aG3slTvfN6p2LOffVyo1VvivCklKckXxpEfxVc1PyZnoPdMZKG9WcOGbkCDg4kfn9iKkqPi1DJFETdCVXkM1jLJCA0nlRRYUJ-KyppuIQe_uIH3coY_ACZ9InbQaqT0FdBGN38YxEKn6HHgf4j0Iyc1mdRXQH6ocY8bFU2R27buaZF2N6yBbpBKgSjjMrG8a5qRzEpm3FM5tO7cKuqpoDTxFD96UMliPNe-8w1xs_e9bZMEpPz8MObc_S7ysSlnzg6zRZTOsWN-YdxOxdAuP7F3a2vWPkNFhi_KTqFWgE2xn7rUzgj0VHRTWJDxcx3L96z12Zzv7IPp1XS_ktG_8OPMXMSrGDX-xHlMQ0Sai7iG3DjSe7zJ-eI6uplwrKlBYgwXlDDMevyL5OZxVO5vgK8PeUDGfmYCDUTaAojRriwGUI3v9sV4ersjgDifZhVZ0Tu7wvPGlQt0RimA18VwjZ_BTitUGjUmnJ2CSfYsMUziAtFVaLne9SjbCF2gIciinIdTOXniUukjB99-_NaG6K1MjNEJOl3i3a8OGYRz3G58jI-0I"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/user_my_reveiw"
+					},
+					"response": []
+				},
+				{
+					"name": "add_chat_request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "astro_id",
+									"value": "4",
+									"type": "default"
+								},
+								{
+									"key": "language_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_chat_request"
+					},
+					"response": []
+				},
+				{
+					"name": "add_call_request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "astro_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "language_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_call_request"
+					},
+					"response": []
+				},
+				{
+					"name": "add_video_call_request",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjJiZTk4MTkwYWMxYjRhZjBmOTNiYjNhMDg3ODNhZTg5MTY2NDE5MmRkOTg4YjFlZDI5ODIwZTVmMGU2MTNhM2NjYjFjNDY0MDVkZmY5OTQiLCJpYXQiOjE2NzYyOTIxODAuNzQ0NjEyOTMyMjA1MjAwMTk1MzEyNSwibmJmIjoxNjc2MjkyMTgwLjc0NDYxNjAzMTY0NjcyODUxNTYyNSwiZXhwIjoxNzA3ODI4MTgwLjc0MjU4NDk0Mzc3MTM2MjMwNDY4NzUsInN1YiI6IjQiLCJzY29wZXMiOltdfQ.QlWPKrk8HP2eJMvwCLMBcSbn8w3tTYD1_74wighZHXGeX1hadU6_2Ws37UTGEcsI0UxRiOiKUkOgsAfcktSecC0jAh-OHHr9CpUE33I2rVAX-dmWd5lnUHCY2fL6d3n6nYOEA0RiTTrrE5nzWESxbAepKHJjbMQHRidBqgNDLdSzfbmmRcWiAHDmd5RpVSya77mQdSv5Sl2MG54yxZuoqcG9Pfi50oWYWUrWm90YGH0bFOqQRnpFtQFXsxaNiLNaga4c1-Xvphq_szywQHKWaaUCuIQf6AIB-Xvu8KUX8gjdkd8D_vBpRLJKYeakTX4InOfU8ej6QHfHewIMKBNDF0v847VXvFT039oOrEL-2Zr6geiTGnO9dSMRfFmYH4B3XjWJrkl9tKh5UKUlVlIoWnCsNTZGeST1UMmZ-oqREDbRPPfXIJHMVACfQMwlMVyZdwsp7oy1XoEFrAY34k_BotHJr1HFux6et9OmqCKUM5c73VYKHFRtzFkwks9EsgUYb_T0BmxgHfIhSRR_oviZVMOVLObPzSoz9p7bDuGkn3kIYxD-4NqPXJ9CQ3_QhX7jztIDKZ8JVsoNQ7VhWJMQaKTkQrGVU1_ePEqFFYEeKHovr96VuDu6LM2a-OeBvSPaff-F0wIndlH-5714v4jtq7-2tI2akmI0LgXE_6oVhqs"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "astro_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "language_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_video_call_request"
+					},
+					"response": []
+				},
+				{
+					"name": "history_wallet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/history_wallet"
+					},
+					"response": []
+				},
+				{
+					"name": "history_call",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/history_call"
+					},
+					"response": []
+				},
+				{
+					"name": "history_chat",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNDc4Mzg5MTU0YzFkNjkxMTliMGJlZTAzY2Y3Yjk0NjZiYjg2ODJhM2ZiMWJiZGNmOWFiMDMyZmU0ZTIwZjhiMmYxOWE5YzY1MDIwMDc2NTEiLCJpYXQiOjE2NjkxMTQwMzQuNjgyMDA0OTI4NTg4ODY3MTg3NSwibmJmIjoxNjY5MTE0MDM0LjY4MjAwODk4MTcwNDcxMTkxNDA2MjUsImV4cCI6MTcwMDY1MDAzNC42Nzk3NTMwNjUxMDkyNTI5Mjk2ODc1LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.nbo86ol5p5v6rz4IRDNzLCdIhz03nBoaZZq55m8vqF1UGcocItJuVOeZ7gMISGHvebhmQBE-cQbUlaLi6zOlADLaqDSakpnIiHn7sI0uQq8LUsDB5vg2kqPae6US8MM_hm5a0o79ed8z-KHEtnxq0FD1hm0yJPUyBQ7Vt9LSy9Jzjrel-q4laXLSbV-H1tdLbDvV6XFv4LyjY0vyoHDINCXvPKpEhgQyHcAU4kjg5KHDIPw2r0KBNUl_0EePh2jb3rl3S7BJox1-K0b4ok9HUO1TJamEexSrvZFMOO4FWDZGPa4b9yoEyV32k6yv4UgBq2E-z7H9gfsCdpKenbRxV8MvIpE8Vjp2NeF1x9AYZy88rTiogu9ootcURuis1IjkxNp-EDIDSM79fIG0Lz6npSgy6huqFHJZETUZWZjbm2brKVqUy8IVwcFE9mJkIgFDVnc4b7aejAJkLODO9FmWAfijUCt5WBhFY5TpCdInAsL9PGlqD1Q9R0McjkezzIQtaPximfhL6VfwsHdb_vg4HpTH20HcbE6aoAZuwzGum6LmtalkuYtqCa_97T6ogOUUKmia9waFrPPuEo6sRIS5iVgKahm7T6dwZfgP6o078KJp0V3SrLvqHzvocnIlydGKDlKA4wAMNLP4KkwzStjK4p_-AHOGzZy_byDdB-eXbvM"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/history_chat"
+					},
+					"response": []
+				},
+				{
+					"name": "history_products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTUyN2QxMzRlODQwYjIwMGIzMWI5ODE4NmE3MjhiZDRjNTdjY2NjNGNlZWZiZTU5MTc0YTdmYWMzOWFiYWZkZTZlODFmMGJjMWNjODM2MzYiLCJpYXQiOjE2NzQ2MjQ2MDMuMzgzMTMxOTgwODk1OTk2MDkzNzUsIm5iZiI6MTY3NDYyNDYwMy4zODMxMzUwODAzMzc1MjQ0MTQwNjI1LCJleHAiOjE3MDYxNjA2MDMuMzgxMTE1OTEzMzkxMTEzMjgxMjUsInN1YiI6IjYyIiwic2NvcGVzIjpbXX0.ewVzV6IoX4dIvbnYfvWBBl6p8VHk4rwDeqrpfz2xHyp7E5fDHKtQfhIm5L8q0ugzqZ0KrVymWyWo27__UZmePI8_sp98mq8l-EuMKAKHzB778cWj_Y__rahTNTlFOaxQj67bnJtc-IP2v8w9pY-QuX4UhmmDNeC1zAwOiWupmhUidiKtaPEBJAOCbj7k2ZiDKbgmPC6tJ6O16UoJGVZWrdikk_uRJusweteDInFGdD7QI_jsgsswRR3WZodtPkgjFgnh0lcWHHTCRtkKW-RypGLL2fcnxrP-0kKk091NklVN2vJXO4Bk-eohOuDgeHLOb84mlCgTgwq1Deo0A4pa1pezxOzTfvhwdbCSVd-0AxjBsalm1CIehv0eUNkDGzRUiEBc9hkaDowLmL_RS0t8rPvAtxOoFT_xgL5IXghZq3TJTtls6ME1gKn874pcRmTBY45gSnqIt05rbYGcACCUyKAvK1SmpZs9M0ojHH3iOaGygPPBlVVxYyGrdMtvVoLGQjmhB5_i3KQZ1EykBFQVLUEks9riPVC2W33NlevQx9Kr96vVN8_Ylsv7EBUY2x7y9R2em8ntzUNinYqWcGdCTG8FMPxwk-KDscfwpCR-rgxVVUpIQOVg7VfV4e2TixVuPHrU_ERxRNaseA-Ty_YN7ELP2IvL_2SwI_Q2ci8vHWs"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "2",
+									"description": "1-Suggest,2-Purchase",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/history_products"
+					},
+					"response": []
+				},
+				{
+					"name": "history_reports",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTUyN2QxMzRlODQwYjIwMGIzMWI5ODE4NmE3MjhiZDRjNTdjY2NjNGNlZWZiZTU5MTc0YTdmYWMzOWFiYWZkZTZlODFmMGJjMWNjODM2MzYiLCJpYXQiOjE2NzQ2MjQ2MDMuMzgzMTMxOTgwODk1OTk2MDkzNzUsIm5iZiI6MTY3NDYyNDYwMy4zODMxMzUwODAzMzc1MjQ0MTQwNjI1LCJleHAiOjE3MDYxNjA2MDMuMzgxMTE1OTEzMzkxMTEzMjgxMjUsInN1YiI6IjYyIiwic2NvcGVzIjpbXX0.ewVzV6IoX4dIvbnYfvWBBl6p8VHk4rwDeqrpfz2xHyp7E5fDHKtQfhIm5L8q0ugzqZ0KrVymWyWo27__UZmePI8_sp98mq8l-EuMKAKHzB778cWj_Y__rahTNTlFOaxQj67bnJtc-IP2v8w9pY-QuX4UhmmDNeC1zAwOiWupmhUidiKtaPEBJAOCbj7k2ZiDKbgmPC6tJ6O16UoJGVZWrdikk_uRJusweteDInFGdD7QI_jsgsswRR3WZodtPkgjFgnh0lcWHHTCRtkKW-RypGLL2fcnxrP-0kKk091NklVN2vJXO4Bk-eohOuDgeHLOb84mlCgTgwq1Deo0A4pa1pezxOzTfvhwdbCSVd-0AxjBsalm1CIehv0eUNkDGzRUiEBc9hkaDowLmL_RS0t8rPvAtxOoFT_xgL5IXghZq3TJTtls6ME1gKn874pcRmTBY45gSnqIt05rbYGcACCUyKAvK1SmpZs9M0ojHH3iOaGygPPBlVVxYyGrdMtvVoLGQjmhB5_i3KQZ1EykBFQVLUEks9riPVC2W33NlevQx9Kr96vVN8_Ylsv7EBUY2x7y9R2em8ntzUNinYqWcGdCTG8FMPxwk-KDscfwpCR-rgxVVUpIQOVg7VfV4e2TixVuPHrU_ERxRNaseA-Ty_YN7ELP2IvL_2SwI_Q2ci8vHWs"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/history_reports"
+					},
+					"response": []
+				},
+				{
+					"name": "history_read_reports",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTUyN2QxMzRlODQwYjIwMGIzMWI5ODE4NmE3MjhiZDRjNTdjY2NjNGNlZWZiZTU5MTc0YTdmYWMzOWFiYWZkZTZlODFmMGJjMWNjODM2MzYiLCJpYXQiOjE2NzQ2MjQ2MDMuMzgzMTMxOTgwODk1OTk2MDkzNzUsIm5iZiI6MTY3NDYyNDYwMy4zODMxMzUwODAzMzc1MjQ0MTQwNjI1LCJleHAiOjE3MDYxNjA2MDMuMzgxMTE1OTEzMzkxMTEzMjgxMjUsInN1YiI6IjYyIiwic2NvcGVzIjpbXX0.ewVzV6IoX4dIvbnYfvWBBl6p8VHk4rwDeqrpfz2xHyp7E5fDHKtQfhIm5L8q0ugzqZ0KrVymWyWo27__UZmePI8_sp98mq8l-EuMKAKHzB778cWj_Y__rahTNTlFOaxQj67bnJtc-IP2v8w9pY-QuX4UhmmDNeC1zAwOiWupmhUidiKtaPEBJAOCbj7k2ZiDKbgmPC6tJ6O16UoJGVZWrdikk_uRJusweteDInFGdD7QI_jsgsswRR3WZodtPkgjFgnh0lcWHHTCRtkKW-RypGLL2fcnxrP-0kKk091NklVN2vJXO4Bk-eohOuDgeHLOb84mlCgTgwq1Deo0A4pa1pezxOzTfvhwdbCSVd-0AxjBsalm1CIehv0eUNkDGzRUiEBc9hkaDowLmL_RS0t8rPvAtxOoFT_xgL5IXghZq3TJTtls6ME1gKn874pcRmTBY45gSnqIt05rbYGcACCUyKAvK1SmpZs9M0ojHH3iOaGygPPBlVVxYyGrdMtvVoLGQjmhB5_i3KQZ1EykBFQVLUEks9riPVC2W33NlevQx9Kr96vVN8_Ylsv7EBUY2x7y9R2em8ntzUNinYqWcGdCTG8FMPxwk-KDscfwpCR-rgxVVUpIQOVg7VfV4e2TixVuPHrU_ERxRNaseA-Ty_YN7ELP2IvL_2SwI_Q2ci8vHWs"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/history_read_reports"
+					},
+					"response": []
+				},
+				{
+					"name": "request_for_report",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYTUyN2QxMzRlODQwYjIwMGIzMWI5ODE4NmE3MjhiZDRjNTdjY2NjNGNlZWZiZTU5MTc0YTdmYWMzOWFiYWZkZTZlODFmMGJjMWNjODM2MzYiLCJpYXQiOjE2NzQ2MjQ2MDMuMzgzMTMxOTgwODk1OTk2MDkzNzUsIm5iZiI6MTY3NDYyNDYwMy4zODMxMzUwODAzMzc1MjQ0MTQwNjI1LCJleHAiOjE3MDYxNjA2MDMuMzgxMTE1OTEzMzkxMTEzMjgxMjUsInN1YiI6IjYyIiwic2NvcGVzIjpbXX0.ewVzV6IoX4dIvbnYfvWBBl6p8VHk4rwDeqrpfz2xHyp7E5fDHKtQfhIm5L8q0ugzqZ0KrVymWyWo27__UZmePI8_sp98mq8l-EuMKAKHzB778cWj_Y__rahTNTlFOaxQj67bnJtc-IP2v8w9pY-QuX4UhmmDNeC1zAwOiWupmhUidiKtaPEBJAOCbj7k2ZiDKbgmPC6tJ6O16UoJGVZWrdikk_uRJusweteDInFGdD7QI_jsgsswRR3WZodtPkgjFgnh0lcWHHTCRtkKW-RypGLL2fcnxrP-0kKk091NklVN2vJXO4Bk-eohOuDgeHLOb84mlCgTgwq1Deo0A4pa1pezxOzTfvhwdbCSVd-0AxjBsalm1CIehv0eUNkDGzRUiEBc9hkaDowLmL_RS0t8rPvAtxOoFT_xgL5IXghZq3TJTtls6ME1gKn874pcRmTBY45gSnqIt05rbYGcACCUyKAvK1SmpZs9M0ojHH3iOaGygPPBlVVxYyGrdMtvVoLGQjmhB5_i3KQZ1EykBFQVLUEks9riPVC2W33NlevQx9Kr96vVN8_Ylsv7EBUY2x7y9R2em8ntzUNinYqWcGdCTG8FMPxwk-KDscfwpCR-rgxVVUpIQOVg7VfV4e2TixVuPHrU_ERxRNaseA-Ty_YN7ELP2IvL_2SwI_Q2ci8vHWs"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "astro_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "dob",
+									"value": "1994-11-22",
+									"type": "text"
+								},
+								{
+									"key": "time_birth",
+									"value": "13:31:15",
+									"type": "text"
+								},
+								{
+									"key": "place_birth",
+									"value": "Pipra",
+									"type": "text"
+								},
+								{
+									"key": "occupation",
+									"value": "Heloo",
+									"type": "text"
+								},
+								{
+									"key": "maritial_status",
+									"value": "No",
+									"type": "text"
+								},
+								{
+									"key": "topic",
+									"value": "I fkjsdjf fkjdsfjdsfsf",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/request_for_report"
+					},
+					"response": []
+				},
+				{
+					"name": "my_orders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzdjYjMwMmFiM2FmZDVmYTZhNzZlNjQ5ZDQyOWRlNGQ2ZDQ4ZDRmYTk1M2FiZDBmOTA4NDQ3Y2U3YTRlNjU3MWI5N2ViNmFiOTI0MjQzMTIiLCJpYXQiOjE2NzY1MzEyODIuMjEzMTM0MDUwMzY5MjYyNjk1MzEyNSwibmJmIjoxNjc2NTMxMjgyLjIxMzEzNjkxMTM5MjIxMTkxNDA2MjUsImV4cCI6MTcwODA2NzI4Mi4yMTA3NTI5NjQwMTk3NzUzOTA2MjUsInN1YiI6IjYyIiwic2NvcGVzIjpbXX0.sqm_RHgj9Ema2sIkk-gSEfT1B4suwLR0_uM3hnDpyFbsPj4QFgTEFUmNhSNwOGYSqJ8hLCNmPmXCbbbH4bx5wExbQ10X74vG4LCGlWCUxSBpmu85z_q7qbteW-W1PpffmcJ9HfIgft5hsGKXUw3IojxA9PPS36kR5Guom8lqiKfyI-Rk9nnKpkATAQNTfmrUM30zHaQOJf6sxAfUDE8ukOUPS24-n52PoBI7d4eL57Ujo7bq2Rg898bclGUA6Fm_xFFq5Hgu71CTvTLiM7r0Qi662zZlFbCCSxjhRvGRCEZxvprSg8av3n8GIh0OEhFAujv2_AdA8pxnqMHRxFsbCwoAT-AQybIdRyo7viUlB4ehVmucsY8AajPI-9-WwWMZi2AgoS2z5K_sruW-nMZXjVLPr5LmgU_RRj5gCBVMjaC8vT8RBcQa44vfdp8Q5RDa9z45UZ5b5m5RAZNcngtNM4zpaGFES2XyjlOacohxdzLi4y-tuPQF_BL8G7uWBdXDQzvAfCxq5iGwxK1E64dIaWXDsOPOJOyoaE-E22AEBVmMZAHPloJrY11bR-xp6m7IlpE7_2l844u5oQOG5OQeg2YKNod4ynxBo264En28shDl8fFSJW02ziKhZJDZBiho6Lmronm_ZfSgj7Ynr47ID0TwwzwQt-ecjoLgtwWtUqA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "2",
+									"description": "1-Without Delivered,2-Only Delivered",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/my_orders"
+					},
+					"response": []
+				},
+				{
+					"name": "booking_detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzdjYjMwMmFiM2FmZDVmYTZhNzZlNjQ5ZDQyOWRlNGQ2ZDQ4ZDRmYTk1M2FiZDBmOTA4NDQ3Y2U3YTRlNjU3MWI5N2ViNmFiOTI0MjQzMTIiLCJpYXQiOjE2NzY1MzEyODIuMjEzMTM0MDUwMzY5MjYyNjk1MzEyNSwibmJmIjoxNjc2NTMxMjgyLjIxMzEzNjkxMTM5MjIxMTkxNDA2MjUsImV4cCI6MTcwODA2NzI4Mi4yMTA3NTI5NjQwMTk3NzUzOTA2MjUsInN1YiI6IjYyIiwic2NvcGVzIjpbXX0.sqm_RHgj9Ema2sIkk-gSEfT1B4suwLR0_uM3hnDpyFbsPj4QFgTEFUmNhSNwOGYSqJ8hLCNmPmXCbbbH4bx5wExbQ10X74vG4LCGlWCUxSBpmu85z_q7qbteW-W1PpffmcJ9HfIgft5hsGKXUw3IojxA9PPS36kR5Guom8lqiKfyI-Rk9nnKpkATAQNTfmrUM30zHaQOJf6sxAfUDE8ukOUPS24-n52PoBI7d4eL57Ujo7bq2Rg898bclGUA6Fm_xFFq5Hgu71CTvTLiM7r0Qi662zZlFbCCSxjhRvGRCEZxvprSg8av3n8GIh0OEhFAujv2_AdA8pxnqMHRxFsbCwoAT-AQybIdRyo7viUlB4ehVmucsY8AajPI-9-WwWMZi2AgoS2z5K_sruW-nMZXjVLPr5LmgU_RRj5gCBVMjaC8vT8RBcQa44vfdp8Q5RDa9z45UZ5b5m5RAZNcngtNM4zpaGFES2XyjlOacohxdzLi4y-tuPQF_BL8G7uWBdXDQzvAfCxq5iGwxK1E64dIaWXDsOPOJOyoaE-E22AEBVmMZAHPloJrY11bR-xp6m7IlpE7_2l844u5oQOG5OQeg2YKNod4ynxBo264En28shDl8fFSJW02ziKhZJDZBiho6Lmronm_ZfSgj7Ynr47ID0TwwzwQt-ecjoLgtwWtUqA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "16759322212214",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/booking_detail"
+					},
+					"response": []
+				},
+				{
+					"name": "consultancy_order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzdjYjMwMmFiM2FmZDVmYTZhNzZlNjQ5ZDQyOWRlNGQ2ZDQ4ZDRmYTk1M2FiZDBmOTA4NDQ3Y2U3YTRlNjU3MWI5N2ViNmFiOTI0MjQzMTIiLCJpYXQiOjE2NzY1MzEyODIuMjEzMTM0MDUwMzY5MjYyNjk1MzEyNSwibmJmIjoxNjc2NTMxMjgyLjIxMzEzNjkxMTM5MjIxMTkxNDA2MjUsImV4cCI6MTcwODA2NzI4Mi4yMTA3NTI5NjQwMTk3NzUzOTA2MjUsInN1YiI6IjYyIiwic2NvcGVzIjpbXX0.sqm_RHgj9Ema2sIkk-gSEfT1B4suwLR0_uM3hnDpyFbsPj4QFgTEFUmNhSNwOGYSqJ8hLCNmPmXCbbbH4bx5wExbQ10X74vG4LCGlWCUxSBpmu85z_q7qbteW-W1PpffmcJ9HfIgft5hsGKXUw3IojxA9PPS36kR5Guom8lqiKfyI-Rk9nnKpkATAQNTfmrUM30zHaQOJf6sxAfUDE8ukOUPS24-n52PoBI7d4eL57Ujo7bq2Rg898bclGUA6Fm_xFFq5Hgu71CTvTLiM7r0Qi662zZlFbCCSxjhRvGRCEZxvprSg8av3n8GIh0OEhFAujv2_AdA8pxnqMHRxFsbCwoAT-AQybIdRyo7viUlB4ehVmucsY8AajPI-9-WwWMZi2AgoS2z5K_sruW-nMZXjVLPr5LmgU_RRj5gCBVMjaC8vT8RBcQa44vfdp8Q5RDa9z45UZ5b5m5RAZNcngtNM4zpaGFES2XyjlOacohxdzLi4y-tuPQF_BL8G7uWBdXDQzvAfCxq5iGwxK1E64dIaWXDsOPOJOyoaE-E22AEBVmMZAHPloJrY11bR-xp6m7IlpE7_2l844u5oQOG5OQeg2YKNod4ynxBo264En28shDl8fFSJW02ziKhZJDZBiho6Lmronm_ZfSgj7Ynr47ID0TwwzwQt-ecjoLgtwWtUqA"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/consultancy_order"
+					},
+					"response": []
+				},
+				{
+					"name": "consultancy_order_details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzdjYjMwMmFiM2FmZDVmYTZhNzZlNjQ5ZDQyOWRlNGQ2ZDQ4ZDRmYTk1M2FiZDBmOTA4NDQ3Y2U3YTRlNjU3MWI5N2ViNmFiOTI0MjQzMTIiLCJpYXQiOjE2NzY1MzEyODIuMjEzMTM0MDUwMzY5MjYyNjk1MzEyNSwibmJmIjoxNjc2NTMxMjgyLjIxMzEzNjkxMTM5MjIxMTkxNDA2MjUsImV4cCI6MTcwODA2NzI4Mi4yMTA3NTI5NjQwMTk3NzUzOTA2MjUsInN1YiI6IjYyIiwic2NvcGVzIjpbXX0.sqm_RHgj9Ema2sIkk-gSEfT1B4suwLR0_uM3hnDpyFbsPj4QFgTEFUmNhSNwOGYSqJ8hLCNmPmXCbbbH4bx5wExbQ10X74vG4LCGlWCUxSBpmu85z_q7qbteW-W1PpffmcJ9HfIgft5hsGKXUw3IojxA9PPS36kR5Guom8lqiKfyI-Rk9nnKpkATAQNTfmrUM30zHaQOJf6sxAfUDE8ukOUPS24-n52PoBI7d4eL57Ujo7bq2Rg898bclGUA6Fm_xFFq5Hgu71CTvTLiM7r0Qi662zZlFbCCSxjhRvGRCEZxvprSg8av3n8GIh0OEhFAujv2_AdA8pxnqMHRxFsbCwoAT-AQybIdRyo7viUlB4ehVmucsY8AajPI-9-WwWMZi2AgoS2z5K_sruW-nMZXjVLPr5LmgU_RRj5gCBVMjaC8vT8RBcQa44vfdp8Q5RDa9z45UZ5b5m5RAZNcngtNM4zpaGFES2XyjlOacohxdzLi4y-tuPQF_BL8G7uWBdXDQzvAfCxq5iGwxK1E64dIaWXDsOPOJOyoaE-E22AEBVmMZAHPloJrY11bR-xp6m7IlpE7_2l844u5oQOG5OQeg2YKNod4ynxBo264En28shDl8fFSJW02ziKhZJDZBiho6Lmronm_ZfSgj7Ynr47ID0TwwzwQt-ecjoLgtwWtUqA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "booking_id",
+									"value": "dafsdfdsfg",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/consultancy_order_detail"
+					},
+					"response": []
+				},
+				{
+					"name": "user_give_review",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzdjYjMwMmFiM2FmZDVmYTZhNzZlNjQ5ZDQyOWRlNGQ2ZDQ4ZDRmYTk1M2FiZDBmOTA4NDQ3Y2U3YTRlNjU3MWI5N2ViNmFiOTI0MjQzMTIiLCJpYXQiOjE2NzY1MzEyODIuMjEzMTM0MDUwMzY5MjYyNjk1MzEyNSwibmJmIjoxNjc2NTMxMjgyLjIxMzEzNjkxMTM5MjIxMTkxNDA2MjUsImV4cCI6MTcwODA2NzI4Mi4yMTA3NTI5NjQwMTk3NzUzOTA2MjUsInN1YiI6IjYyIiwic2NvcGVzIjpbXX0.sqm_RHgj9Ema2sIkk-gSEfT1B4suwLR0_uM3hnDpyFbsPj4QFgTEFUmNhSNwOGYSqJ8hLCNmPmXCbbbH4bx5wExbQ10X74vG4LCGlWCUxSBpmu85z_q7qbteW-W1PpffmcJ9HfIgft5hsGKXUw3IojxA9PPS36kR5Guom8lqiKfyI-Rk9nnKpkATAQNTfmrUM30zHaQOJf6sxAfUDE8ukOUPS24-n52PoBI7d4eL57Ujo7bq2Rg898bclGUA6Fm_xFFq5Hgu71CTvTLiM7r0Qi662zZlFbCCSxjhRvGRCEZxvprSg8av3n8GIh0OEhFAujv2_AdA8pxnqMHRxFsbCwoAT-AQybIdRyo7viUlB4ehVmucsY8AajPI-9-WwWMZi2AgoS2z5K_sruW-nMZXjVLPr5LmgU_RRj5gCBVMjaC8vT8RBcQa44vfdp8Q5RDa9z45UZ5b5m5RAZNcngtNM4zpaGFES2XyjlOacohxdzLi4y-tuPQF_BL8G7uWBdXDQzvAfCxq5iGwxK1E64dIaWXDsOPOJOyoaE-E22AEBVmMZAHPloJrY11bR-xp6m7IlpE7_2l844u5oQOG5OQeg2YKNod4ynxBo264En28shDl8fFSJW02ziKhZJDZBiho6Lmronm_ZfSgj7Ynr47ID0TwwzwQt-ecjoLgtwWtUqA"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "astro_id",
+									"value": "69",
+									"type": "default"
+								},
+								{
+									"key": "rating",
+									"value": "4",
+									"type": "default"
+								},
+								{
+									"key": "review",
+									"value": "Hello",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/user_give_review"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Astrologer",
+			"item": [
+				{
+					"name": "astro_login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "mobile_no",
+									"value": "880472753456",
+									"type": "text"
+								},
+								{
+									"key": "device_id",
+									"value": "fsdf",
+									"type": "text"
+								},
+								{
+									"key": "device_type",
+									"value": "sdfdsf",
+									"type": "text"
+								},
+								{
+									"key": "device_name",
+									"value": "fsdfdsf",
+									"type": "text"
+								},
+								{
+									"key": "device_token",
+									"value": "dsfsf",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "longtitude",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_login"
+					},
+					"response": []
+				},
+				{
+					"name": "astro_verify_otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "143",
+									"type": "text"
+								},
+								{
+									"key": "otp",
+									"value": "2573",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_verify_otp"
+					},
+					"response": []
+				},
+				{
+					"name": "skills_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/skills_list"
+					},
+					"response": []
+				},
+				{
+					"name": "add_astro_details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDNmOTc4YWZmN2MxMTYyOGM0MWZlZjczMjdmODUyZDkxNDhmMzc0ZjBkZWRjYTljYjY5MzliNjJhODE4MDI2YjJmMTk3NDE5NmM4OGUxOTAiLCJpYXQiOjE2NzgxNjc3NTEuMTQ2NTU0OTQ2ODk5NDE0MDYyNSwibmJmIjoxNjc4MTY3NzUxLjE0NjU1OTAwMDAxNTI1ODc4OTA2MjUsImV4cCI6MTcwOTc5MDE1MS4xNDQwMjEwMzQyNDA3MjI2NTYyNSwic3ViIjoiMTc4Iiwic2NvcGVzIjpbXX0.oKrX2Gq_RIsmONkfj-PvPdjVqIx0x_Ag3mmJ9BeRzA257EUws_u6KRQ9u0ifnygsC6vnv6kog5avApsvQVXpHh9UOEpkkloQIankj-0HLSUeboEO85upsdOaVWMRURiOPAdcWMXYUtb84U5ijHJcjOPf1EefqZbGhHdgRiDDGWsdxCLRjnVtNDOnixo4P2Rh8FEB-pxBfmP6-XuR4haVFEkPbctowQ6UO-Drx1ZMd09ayPQYNWA5y9zSETDTrSxQclZ2HNuZLPwfwj5gGwduy0nBgCwTcPhBh-1QIynMCZ7-NTSVrR6JEpIM3pK6Md7jjJX9rAmPZD1qjY7R3p7NPFXpmSXCwLQ6hvABSNfkHZlUUFKL_qtn5r1slliMlKgdRDqL8_eHPMyILHMaVdKb-NDxgHRUvlUzUql4jJL3_qtTZkchajHALg58WVTsLQavGT_iuQgE6VumDEg0_w99EJBBPBznmsNRKIXCQ23Qo9ZbTjn538YaXEs3YMFt74vJXTNb4fQg0vtbsIlOBsVnTfhpFJWqG-1X3P75OxA5ezrS4NninvEPZrnxF1qfkM2Om7kMqPjPDWQmoE56AAHzKfyAVFS_RFaMtVSqtifHbkLvtBgdhJobm1U0ZkDKHc997BTy_9mj4vSqSvwFCVHcycptMLJzXqlRXvBuKN2_FJw"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "full_name",
+									"value": "Test2",
+									"type": "text"
+								},
+								{
+									"key": "company_name",
+									"value": "Maxtra2",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "gddfddd2@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "fdgdgdfgdgfgd sdfsffsdfsdfsffdsfsdf",
+									"type": "text"
+								},
+								{
+									"key": "state_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "city_id",
+									"value": "503",
+									"type": "text"
+								},
+								{
+									"key": "pincode_id",
+									"value": "58745",
+									"type": "text"
+								},
+								{
+									"key": "document1",
+									"type": "file",
+									"src": "/home/oem/Pictures/courses.png"
+								},
+								{
+									"key": "document2",
+									"type": "file",
+									"src": "/home/oem/Pictures/courses.png"
+								},
+								{
+									"key": "expertise",
+									"value": "1,2",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "skills",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "bank_name",
+									"value": "dfdsfdsdg",
+									"type": "text"
+								},
+								{
+									"key": "account_no",
+									"value": "7567657657657",
+									"type": "text"
+								},
+								{
+									"key": "acc_holder_name",
+									"value": "dsfds345453",
+									"type": "text"
+								},
+								{
+									"key": "ifsc_code",
+									"value": "fdsgfdgf43545435",
+									"type": "text"
+								},
+								{
+									"key": "branch",
+									"value": "dfgdfgfdgdfgfd",
+									"type": "text"
+								},
+								{
+									"key": "profile_image",
+									"type": "file",
+									"src": "/home/oem/Pictures/courses.png"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_astro_details"
+					},
+					"response": []
+				},
+				{
+					"name": "manage_calendar_schedule",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzMzY2FkYjA4NDMwMDE0ZWQyNjY5MWNiMDM0ZmQ1YTY3MWI1ZDExMWQ4NmZiMWVhNDE0ZDMyYmYxNGVlZTYwNDhlYjRiYTZiNTEyNDQzOTUiLCJpYXQiOjE2NzY1Mjk2MTIuMDE3NDY3MDIxOTQyMTM4NjcxODc1LCJuYmYiOjE2NzY1Mjk2MTIuMDE3NDY5ODgyOTY1MDg3ODkwNjI1LCJleHAiOjE3MDgwNjU2MTIuMDE1MDA2MDY1MzY4NjUyMzQzNzUsInN1YiI6IjQiLCJzY29wZXMiOltdfQ.FvpjaE3BYjgyltLnwGpS8ai69qakO53RNCfBptZx8R9wTU3eG9sowLiRCRnsPYZ87wlGbqXRFX_KFBS_kBchF6MOz3gjHF8_9g6KWkAmRtzZTkkehZY4hwSujou7wuHqnEnotBZLheeTx_2iBf--MrlBhvp1JCbJ24rzX3oZ2OYDu_tTFye79noEQIL8u6VZ4xJLO1FsuwQarqCpdZPwmdXNx5a01HzEIHJQ_ea8dyx42H2RvVV7qqzcFzSYXH0O9IGI0BsVY6wFxVXBJgoz1UOea98ZLLZYbvY5Jo2xPiyXpUonN-EuYNz07ViS3prAzEGa4itfON5-Ryv7ElD0cRJxQ4scSwRsghHlXL7xF9aMs6wnU7cyyhHPuAodCiykZaqwHVSxtgSEkFZBQk9-HneF0b0-A6Cur3_Z2v0-jSy1bBycjNU0Y37hcLbC0Cwcy0O9JyQKoRjtCYNYSz3TBSbRPhU6Muz1uT2C5ZM59P-cpu6_nMyiA4J08GUjSShaxg7XYjMtJEyDbgY28TrZixJAhpkxxy_fIDGg2rhHvk-zRezGcNuzHmfYlWKnYnd1e6WvAHWhLUFP2n7Iw5i3gZFXjZWqpPhifNAPjSCtkGaZsv8DRHhO0jaDPdl6OfPG1Ddbv4XIR7AVtCUMRe25w3HvlbS4Fx6JBDBVeFTHhKo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/manage_calendar_schedule"
+					},
+					"response": []
+				},
+				{
+					"name": "get_cls_date_wise",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYzMzY2FkYjA4NDMwMDE0ZWQyNjY5MWNiMDM0ZmQ1YTY3MWI1ZDExMWQ4NmZiMWVhNDE0ZDMyYmYxNGVlZTYwNDhlYjRiYTZiNTEyNDQzOTUiLCJpYXQiOjE2NzY1Mjk2MTIuMDE3NDY3MDIxOTQyMTM4NjcxODc1LCJuYmYiOjE2NzY1Mjk2MTIuMDE3NDY5ODgyOTY1MDg3ODkwNjI1LCJleHAiOjE3MDgwNjU2MTIuMDE1MDA2MDY1MzY4NjUyMzQzNzUsInN1YiI6IjQiLCJzY29wZXMiOltdfQ.FvpjaE3BYjgyltLnwGpS8ai69qakO53RNCfBptZx8R9wTU3eG9sowLiRCRnsPYZ87wlGbqXRFX_KFBS_kBchF6MOz3gjHF8_9g6KWkAmRtzZTkkehZY4hwSujou7wuHqnEnotBZLheeTx_2iBf--MrlBhvp1JCbJ24rzX3oZ2OYDu_tTFye79noEQIL8u6VZ4xJLO1FsuwQarqCpdZPwmdXNx5a01HzEIHJQ_ea8dyx42H2RvVV7qqzcFzSYXH0O9IGI0BsVY6wFxVXBJgoz1UOea98ZLLZYbvY5Jo2xPiyXpUonN-EuYNz07ViS3prAzEGa4itfON5-Ryv7ElD0cRJxQ4scSwRsghHlXL7xF9aMs6wnU7cyyhHPuAodCiykZaqwHVSxtgSEkFZBQk9-HneF0b0-A6Cur3_Z2v0-jSy1bBycjNU0Y37hcLbC0Cwcy0O9JyQKoRjtCYNYSz3TBSbRPhU6Muz1uT2C5ZM59P-cpu6_nMyiA4J08GUjSShaxg7XYjMtJEyDbgY28TrZixJAhpkxxy_fIDGg2rhHvk-zRezGcNuzHmfYlWKnYnd1e6WvAHWhLUFP2n7Iw5i3gZFXjZWqpPhifNAPjSCtkGaZsv8DRHhO0jaDPdl6OfPG1Ddbv4XIR7AVtCUMRe25w3HvlbS4Fx6JBDBVeFTHhKo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "date",
+									"value": "2023-02-17",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/get_cls_date_wise"
+					},
+					"response": []
+				},
+				{
+					"name": "experience_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzE4MzMzZjUxMDZjMzI1ODczZWNlODEwOWFiMTk1OTA4NWFlMDJiYzc3YjZmMmE4OTY4MDUwNzZmZTllMDBlYTI2Y2UwZjM4MWJkNWNmODgiLCJpYXQiOjE2NzA1ODU3MDcuNjUzMzc0OTEwMzU0NjE0MjU3ODEyNSwibmJmIjoxNjcwNTg1NzA3LjY1MzM3ODAwOTc5NjE0MjU3ODEyNSwiZXhwIjoxNzAyMTIxNzA3LjY0OTc5MjkwOTYyMjE5MjM4MjgxMjUsInN1YiI6IjYiLCJzY29wZXMiOltdfQ.sSC2VaIzEC95lzFAt8HXCmngXSBDas-CoXh61ChUek1g13SHRh-qySHoc_S-xHAW9rIWRV_r63lIT56Y7CFRx4BR8jK9qMsBu_GHjRhZbklwEA6OljzzgMpdwkoVzM1P-6H9WgJZORoi9s_zWrnbFL-HfEpRxRDPAfH1PXowMTGs1gZub4iQnlwHhbN6pUlxcd4mlgj2hVqdj280GlJR4yaLQO4O0UVWxB74g31f_UDgvCE141Kd1zKKFns3yu8qabuhyhzwhV_wOesdjhv9j0A5bgUX2QpUyW6F6s0PnkK_eLHm0v7erDxiqpc9MoSbzUKa3X8wUYTsZNmp9I81eLEEefGGfB6SiDNDr-danT_4xUx3OyfsPOvLcedCXiwiS9UCJbapOijAdgMns4Ksww03P5yBF4z-DUix7ZPva_AC6UdUu0UAAfMzkQ9MPtN_ZH1aIf3YGzw-6A4E-qiP8ZZPbCKzmkdp_3dj32WPEw_ynb0MO-TpDOSAQl359g6M9_IOUyifpKZkR00rqx1PCye4lX0Nx_bcLiAgWuvViSLaoQwz8kCGEsdyB658eMlEjRgYHG56fPJj2wfatvB8B3u9jb4vq4oILhc8t50qgT9Pxe2eV3S67_WPY_ADAsXOa-OXzpSTJUstrnylbPf5AAFbGv1nw3rZc_tKq5FWclY"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/experience_list"
+					},
+					"response": []
+				},
+				{
+					"name": "astro_profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_profile"
+					},
+					"response": []
+				},
+				{
+					"name": "astro_profile_update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "S Astro",
+									"type": "default"
+								},
+								{
+									"key": "mobile_no",
+									"value": "8804727597",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "s@astro.com",
+									"type": "default"
+								},
+								{
+									"key": "gender",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "profile",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_profile_update"
+					},
+					"response": []
+				},
+				{
+					"name": "astro_update_bank",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "bank_name",
+									"value": "HDFC",
+									"type": "default"
+								},
+								{
+									"key": "account_no",
+									"value": "3245354363",
+									"type": "default"
+								},
+								{
+									"key": "acc_holder_name",
+									"value": "SALI",
+									"type": "default"
+								},
+								{
+									"key": "ifsc_code",
+									"value": "HDFC0011",
+									"type": "default"
+								},
+								{
+									"key": "branch",
+									"value": "Noida",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_update_bank"
+					},
+					"response": []
+				},
+				{
+					"name": "astro_bank_detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_bank_detail"
+					},
+					"response": []
+				},
+				{
+					"name": "astro_address_details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_address_details"
+					},
+					"response": []
+				},
+				{
+					"name": "astro_address_update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "address",
+									"value": "Bihar,Gopalganj 841427, India",
+									"type": "default"
+								},
+								{
+									"key": "state",
+									"value": "5",
+									"type": "default"
+								},
+								{
+									"key": "city",
+									"value": "503",
+									"type": "default"
+								},
+								{
+									"key": "pincode",
+									"value": "841427",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_address_update"
+					},
+					"response": []
+				},
+				{
+					"name": "chat_request_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjJiZTk4MTkwYWMxYjRhZjBmOTNiYjNhMDg3ODNhZTg5MTY2NDE5MmRkOTg4YjFlZDI5ODIwZTVmMGU2MTNhM2NjYjFjNDY0MDVkZmY5OTQiLCJpYXQiOjE2NzYyOTIxODAuNzQ0NjEyOTMyMjA1MjAwMTk1MzEyNSwibmJmIjoxNjc2MjkyMTgwLjc0NDYxNjAzMTY0NjcyODUxNTYyNSwiZXhwIjoxNzA3ODI4MTgwLjc0MjU4NDk0Mzc3MTM2MjMwNDY4NzUsInN1YiI6IjQiLCJzY29wZXMiOltdfQ.QlWPKrk8HP2eJMvwCLMBcSbn8w3tTYD1_74wighZHXGeX1hadU6_2Ws37UTGEcsI0UxRiOiKUkOgsAfcktSecC0jAh-OHHr9CpUE33I2rVAX-dmWd5lnUHCY2fL6d3n6nYOEA0RiTTrrE5nzWESxbAepKHJjbMQHRidBqgNDLdSzfbmmRcWiAHDmd5RpVSya77mQdSv5Sl2MG54yxZuoqcG9Pfi50oWYWUrWm90YGH0bFOqQRnpFtQFXsxaNiLNaga4c1-Xvphq_szywQHKWaaUCuIQf6AIB-Xvu8KUX8gjdkd8D_vBpRLJKYeakTX4InOfU8ej6QHfHewIMKBNDF0v847VXvFT039oOrEL-2Zr6geiTGnO9dSMRfFmYH4B3XjWJrkl9tKh5UKUlVlIoWnCsNTZGeST1UMmZ-oqREDbRPPfXIJHMVACfQMwlMVyZdwsp7oy1XoEFrAY34k_BotHJr1HFux6et9OmqCKUM5c73VYKHFRtzFkwks9EsgUYb_T0BmxgHfIhSRR_oviZVMOVLObPzSoz9p7bDuGkn3kIYxD-4NqPXJ9CQ3_QhX7jztIDKZ8JVsoNQ7VhWJMQaKTkQrGVU1_ePEqFFYEeKHovr96VuDu6LM2a-OeBvSPaff-F0wIndlH-5714v4jtq7-2tI2akmI0LgXE_6oVhqs"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/chat_request_list"
+					},
+					"response": []
+				},
+				{
+					"name": "chat_request_detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/chat_request_detail"
+					},
+					"response": []
+				},
+				{
+					"name": "chat_request_cancel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "default"
+								},
+								{
+									"key": "reason",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "comment",
+									"value": "fgfg",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/chat_request_cancel"
+					},
+					"response": []
+				},
+				{
+					"name": "chat_request_accecpt",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/chat_request_accecpt"
+					},
+					"response": []
+				},
+				{
+					"name": "call_request_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZjJiZTk4MTkwYWMxYjRhZjBmOTNiYjNhMDg3ODNhZTg5MTY2NDE5MmRkOTg4YjFlZDI5ODIwZTVmMGU2MTNhM2NjYjFjNDY0MDVkZmY5OTQiLCJpYXQiOjE2NzYyOTIxODAuNzQ0NjEyOTMyMjA1MjAwMTk1MzEyNSwibmJmIjoxNjc2MjkyMTgwLjc0NDYxNjAzMTY0NjcyODUxNTYyNSwiZXhwIjoxNzA3ODI4MTgwLjc0MjU4NDk0Mzc3MTM2MjMwNDY4NzUsInN1YiI6IjQiLCJzY29wZXMiOltdfQ.QlWPKrk8HP2eJMvwCLMBcSbn8w3tTYD1_74wighZHXGeX1hadU6_2Ws37UTGEcsI0UxRiOiKUkOgsAfcktSecC0jAh-OHHr9CpUE33I2rVAX-dmWd5lnUHCY2fL6d3n6nYOEA0RiTTrrE5nzWESxbAepKHJjbMQHRidBqgNDLdSzfbmmRcWiAHDmd5RpVSya77mQdSv5Sl2MG54yxZuoqcG9Pfi50oWYWUrWm90YGH0bFOqQRnpFtQFXsxaNiLNaga4c1-Xvphq_szywQHKWaaUCuIQf6AIB-Xvu8KUX8gjdkd8D_vBpRLJKYeakTX4InOfU8ej6QHfHewIMKBNDF0v847VXvFT039oOrEL-2Zr6geiTGnO9dSMRfFmYH4B3XjWJrkl9tKh5UKUlVlIoWnCsNTZGeST1UMmZ-oqREDbRPPfXIJHMVACfQMwlMVyZdwsp7oy1XoEFrAY34k_BotHJr1HFux6et9OmqCKUM5c73VYKHFRtzFkwks9EsgUYb_T0BmxgHfIhSRR_oviZVMOVLObPzSoz9p7bDuGkn3kIYxD-4NqPXJ9CQ3_QhX7jztIDKZ8JVsoNQ7VhWJMQaKTkQrGVU1_ePEqFFYEeKHovr96VuDu6LM2a-OeBvSPaff-F0wIndlH-5714v4jtq7-2tI2akmI0LgXE_6oVhqs"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/call_request_list"
+					},
+					"response": []
+				},
+				{
+					"name": "call_request_detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "20",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/call_request_detail"
+					},
+					"response": []
+				},
+				{
+					"name": "call_request_cancel",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "8",
+									"type": "default"
+								},
+								{
+									"key": "reason",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "comment",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/call_request_cancel"
+					},
+					"response": []
+				},
+				{
+					"name": "call_request_accecpt",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "8",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/call_request_accecpt"
+					},
+					"response": []
+				},
+				{
+					"name": "reason_cancel_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/reason_cancel_list"
+					},
+					"response": []
+				},
+				{
+					"name": "setting_details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3NGU4YjBhZjc0NzQ5MWRmYTg1NDc3YTIxYjI5ZDc0NTgzNmVlNmIzM2MwNDcyMzhjNjI5OTRmNWQ5YjUzMDE2NGY2OGUyMzIyOGFiNmEiLCJpYXQiOjE2NzY1MzIzNDEuNTAwMDUyOTI4OTI0NTYwNTQ2ODc1LCJuYmYiOjE2NzY1MzIzNDEuNTAwMDU2MDI4MzY2MDg4ODY3MTg3NSwiZXhwIjoxNzA4MDY4MzQxLjQ5NzcxNDA0MjY2MzU3NDIxODc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.hxAlE99KCvAVg6CD3CSsCg-5ePNsdK5Ets1briQZ3oD0CWtvFZ4Qd3MYUJ0E3obkkcrK2rVtxCJcFKnxwqojO4auShwI-CjLOOTPiycIdv_9VIqozyYWun0uGCbxEdvKOI44YbCrTWSA420hEPrxLazj5AKoe0MCaOC0PRiDWeWQTbyYjeO-3fgtnEjQp83LxG2sJbLubq7eZRT6bqOSrpBACJAZs3_LQOM_WHv5IIlTGnPzosIBBYmTOJSUccgPE_xkm_J5ATAIiJVl2Yrwx74hJu_QI6jYoe4h7dOICXtzWv4XN3YH_dy2NQN6CoPSUjnYhthISd5bdZgRcEW4TR4zxIU1CwCjCqG-f4pE5HayZdRyFkuBQrqo13BqNQGOaIVlPESstNBu6L-vBxYsyhyYtGYn7C6xEHFPMPfSZBmiAi3tVF04VjhXb58hACE5-2v-y2QoUHWyMg7bGq4P1tG5J3N5TiIYndAEZs95dtZpa1Vs-MngY5CZIL4VwkwRkD3eshQ4YmQmFSmbjfzYyQVTMjwiPfJMlTQrefGMjVKBE5xY_KrBSkuNzWlIB2Z_TiTsV7a3DpgfzjAWzszIYoM2F76MV1DdRJcEGjx-FqsU9NOGvXKFB27stMpmiX7nMY94oQwH29Qms6sQO8bhQHREnZ5YIBnS2WoYnm63RJE"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/setting_details"
+					},
+					"response": []
+				},
+				{
+					"name": "setting_update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTE3NGU4YjBhZjc0NzQ5MWRmYTg1NDc3YTIxYjI5ZDc0NTgzNmVlNmIzM2MwNDcyMzhjNjI5OTRmNWQ5YjUzMDE2NGY2OGUyMzIyOGFiNmEiLCJpYXQiOjE2NzY1MzIzNDEuNTAwMDUyOTI4OTI0NTYwNTQ2ODc1LCJuYmYiOjE2NzY1MzIzNDEuNTAwMDU2MDI4MzY2MDg4ODY3MTg3NSwiZXhwIjoxNzA4MDY4MzQxLjQ5NzcxNDA0MjY2MzU3NDIxODc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.hxAlE99KCvAVg6CD3CSsCg-5ePNsdK5Ets1briQZ3oD0CWtvFZ4Qd3MYUJ0E3obkkcrK2rVtxCJcFKnxwqojO4auShwI-CjLOOTPiycIdv_9VIqozyYWun0uGCbxEdvKOI44YbCrTWSA420hEPrxLazj5AKoe0MCaOC0PRiDWeWQTbyYjeO-3fgtnEjQp83LxG2sJbLubq7eZRT6bqOSrpBACJAZs3_LQOM_WHv5IIlTGnPzosIBBYmTOJSUccgPE_xkm_J5ATAIiJVl2Yrwx74hJu_QI6jYoe4h7dOICXtzWv4XN3YH_dy2NQN6CoPSUjnYhthISd5bdZgRcEW4TR4zxIU1CwCjCqG-f4pE5HayZdRyFkuBQrqo13BqNQGOaIVlPESstNBu6L-vBxYsyhyYtGYn7C6xEHFPMPfSZBmiAi3tVF04VjhXb58hACE5-2v-y2QoUHWyMg7bGq4P1tG5J3N5TiIYndAEZs95dtZpa1Vs-MngY5CZIL4VwkwRkD3eshQ4YmQmFSmbjfzYyQVTMjwiPfJMlTQrefGMjVKBE5xY_KrBSkuNzWlIB2Z_TiTsV7a3DpgfzjAWzszIYoM2F76MV1DdRJcEGjx-FqsU9NOGvXKFB27stMpmiX7nMY94oQwH29Qms6sQO8bhQHREnZ5YIBnS2WoYnm63RJE"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "is_chat",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "is_audio_call",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "is_video_call",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/setting_update"
+					},
+					"response": []
+				},
+				{
+					"name": "post_profile_detail",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/post_profile_detail"
+					},
+					"response": []
+				},
+				{
+					"name": "post_profile_update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "full_name",
+									"value": "Sagers",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "experience",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/post_profile_update"
+					},
+					"response": []
+				},
+				{
+					"name": "add_expertise",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "expertise_id",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_expertise"
+					},
+					"response": []
+				},
+				{
+					"name": "get_added_expertise",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/get_added_expertise"
+					},
+					"response": []
+				},
+				{
+					"name": "delete_expertise",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "66",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/delete_expertise"
+					},
+					"response": []
+				},
+				{
+					"name": "add_skills",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "skill_id",
+									"value": "",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_skills"
+					},
+					"response": []
+				},
+				{
+					"name": "get_added_skills",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/get_added_skills"
+					},
+					"response": []
+				},
+				{
+					"name": "delete_skills",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "34",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/delete_skills"
+					},
+					"response": []
+				},
+				{
+					"name": "add_language",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "language_id",
+									"value": "2",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_language"
+					},
+					"response": []
+				},
+				{
+					"name": "get_added_language",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/get_added_language"
+					},
+					"response": []
+				},
+				{
+					"name": "delete_language",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "38",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/delete_language"
+					},
+					"response": []
+				},
+				{
+					"name": "astro_rating_review_list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_rating_review_list"
+					},
+					"response": []
+				},
+				{
+					"name": "review_pin_update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "1",
+									"description": "Type: 1-Active,0-Inactive",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/review_pin_update"
+					},
+					"response": []
+				},
+				{
+					"name": "rating_review_pinselected_list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/rating_review_pinselected_list"
+					},
+					"response": []
+				},
+				{
+					"name": "astro_earning",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "filter",
+									"value": "",
+									"description": "1-All,2-Daily,3-monthly,4yearly",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/astro_earning"
+					},
+					"response": []
+				},
+				{
+					"name": "confirmation_booking_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "",
+									"description": "1-Chat,2-Call,3-Fixed Session,4-Report",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/confirmation_booking_list"
+					},
+					"response": []
+				},
+				{
+					"name": "product_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/product_list"
+					},
+					"response": []
+				},
+				{
+					"name": "add_suggest_remedy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiY2IwYTAwNjk4YjQyNWYzNDJjN2Y1NzQ2OTI4N2YxZDI2NmUyN2RlZTk0MWIwYzA1MmYwYTA4NmU0YjViN2U4OTRjYjQ3NGNmM2I3MjE5ZTgiLCJpYXQiOjE2NzcyMzg5NDAuOTc3NDA0MTE3NTg0MjI4NTE1NjI1LCJuYmYiOjE2NzcyMzg5NDAuOTc3NDA2OTc4NjA3MTc3NzM0Mzc1LCJleHAiOjE3MDg3NzQ5NDAuOTc1MDkxOTM0MjA0MTAxNTYyNSwic3ViIjoiMTIwIiwic2NvcGVzIjpbXX0.pHesu-h4mqczaaG2xa8sgt68WbD1Yp3mhsNnatM_dCMh_iCuEaY6XIBCuvIr6bxsUoB7RDTHoXWrLiMVZoQhr_zxQLucDavFHwmc3XSGp4AJc2LYgsY3UP09z5wgpQXkKAYzWmtqu7SN3-mFiJNfrfb4J5f-KrwxlHhbWZ19jCHzfgusf8LXYAg2nkPWe-LEaiiXTBoJsbyZYataZNyqQWHQDJWHUALsAOeahiev4Vwl3HDmnDskMomiWAsGKZsZVBAsErMvQciQ4M1nZROeTrqnBsa85bZDyFlJazeF1QszW0cF-e-j8vHKMyRiS51oErr0k0Y325YPzFlApP-7Aq70kVds7VknCPs59U6tXjbELAk_Qgf7SzuxLTkgIqJradvZrrCKaviwIOc_KSL2dKBv4SkRZ8zp8Aa-O6DLlEvsN2fBp0sMf2Cc_erKMy2E-6TvAj03KWTtfz5SuyuN1tQlFwTbp39NygqGiLIBooGbLT4iiBZfeZ_eLHTlwumFz_icAg9wo9Cd6Z2XU69Ta1MLI_Lua0fMuRy3RqIHuh2SDYACjV4J-MAv0OlipChTJd-gST2frmYhs-CotPadJyLJbU5TR0KqyMXBUAJUP2h8wNKlSQYI4H7BWZGkikCXZRheEeoWsH5RHvQVNsvOWnol6C4T0W062LoQZ4DH0W0"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_ids",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "user_id",
+									"value": "51",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/add_suggest_remedy"
+					},
+					"response": []
+				},
+				{
+					"name": "send_report",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/send_report"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Agora",
+			"item": [
+				{
+					"name": "chat_user_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/chat_user_list"
+					},
+					"response": []
+				},
+				{
+					"name": "call_user_list",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/call_user_list"
+					},
+					"response": []
+				},
+				{
+					"name": "agora_create_user",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "to_userId",
+									"value": "175",
+									"type": "default"
+								},
+								{
+									"key": "nickname",
+									"value": "dfsfsfds",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/agora_create_user"
+					},
+					"response": []
+				},
+				{
+					"name": "chatagora",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiODI2NjhiNzM3NjZiYzY2NjZiMDBmZmQ3YTRkNDFkNmIyYzMzNWNhNjMyNWNlZjMxNjI4MWZjNDdmN2ZiMzNiYjIwMWY1ZjQ1OGJlMzBkODAiLCJpYXQiOjE2NzcwNjgyMzUuNTMyNTI2OTY5OTA5NjY3OTY4NzUsIm5iZiI6MTY3NzA2ODIzNS41MzI1MzE5NzY2OTk4MjkxMDE1NjI1LCJleHAiOjE3MDg2MDQyMzUuNDkwMTYwOTQyMDc3NjM2NzE4NzUsInN1YiI6IjEyMCIsInNjb3BlcyI6W119.owNMOYtrP9iqHgtVEprhLgZc8Dhx96-bTkV6C0m1xYWHXVO2zmGb_tDtAJvsVA_2MCrtF26myqzhXJ1WsblfPAeQIDAgs8a2KNULGe82cxzXPwlcSdnhMKYra-LT1gM3JD5Kx0UqxwT5tVXLLv3Gr_K62dkBiobqOSt2-vps9pkk8Da3DEKaD4xPqcxOTt1N9Q0Ov6Hi9tBoArhoNwxBoR2m_g-LzkAN1ayeK7ZAwWcU_S-ojqWcEHFyhGfBThmXFHXHoMsR3m7YbVe6alGXOO3nOEgLsCktDspRd-o_5Lr_ipDvV6seWfpk0tUGJFdh3TD2SY4mQj8SR4I62n0lh06pxdBFRsPMFtZYE56TKHA5zpow5GmKt0K4yTFxALvlrhXu9kiCNELrKuemYbs6TaXXVaygS2BkiiV7KLB_s2Q2OFMpcFLraA1U8hU4idd0YhfhLp-48JF3Io7E2JDZSBitc47VyrNH8cFn0HTGnmdckqaez6F2_qNBbNggGIHxYzR3hC68CCJHFUUHDqMjwYJrUKFYY_FOkQ1AZoylpOXa8RdC_N39c1LGimfR53eM_dJxtsb6YOSni_GZjEh0mdtNjwlKlmal7ak-U1FgLwK0gve8JnBSEBmwMsV6XuWCJifHDcU0ah9KV6lo4C86l96Me-xd6CUW6TNpHyo7Mzo"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "to_userId",
+									"value": "22",
+									"type": "default"
+								},
+								{
+									"key": "message",
+									"value": "vfxxc",
+									"type": "default"
+								},
+								{
+									"key": "type",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": "http://172.16.0.238/~astrorahi/astrorahi/api/chatagora"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "language_list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/language_list"
+			},
+			"response": []
+		},
+		{
+			"name": "expertise_list",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmViZDJkYzJhMTA0NjI1NTU2M2MyZDEzZjA2YTYzNThmYjI0MjkwNmNiMTVjMGViMmRjN2IxZTliMTNhMThhNGE2MzJiOGRlZDNiMWI5M2IiLCJpYXQiOjE2NjkxMTQ4NTguNDU4MTI4OTI5MTM4MTgzNTkzNzUsIm5iZiI6MTY2OTExNDg1OC40NTgxMzI5ODIyNTQwMjgzMjAzMTI1LCJleHAiOjE3MDA2NTA4NTguNDU1OTk4ODk3NTUyNDkwMjM0Mzc1LCJzdWIiOiI0Iiwic2NvcGVzIjpbXX0.inUGrivHrxSbcFbt7Cbr1wGzfPHYjpjGo2LfVvWFZYr2_Su2kHi7q6oZsHYqRF2snPBwbnSqmDf8jGcjIF5LYdLXtQK_R37jr9eTrN_W9H_l119iLMhR3BNUNYh17BLiOmFz-iPMBlkut70FfsBqAk5FxQiK8o6p2bHuj1h4owZjnspMO6PeWPxr9CdnINpaNpVx5PAMf6xVikOfvgihj7m9VYVmFCEqZS9vAeaVBeay2F1vooEfEII6gEHEsGJUez3ZQtxPcMeGyk-LvZNooOlQtFVAgS85GKtNo3SYNvbbdeqM70HhpEAgSzIZA30gs1ZlRvndh0Y1rddEpbHejtAsUc7Q5ylXsHhE25SoRSAeEeCWn5Os3ymFXT7i0Lr40IaVkZ30w5P7xvGsVJPRhEr7oo_YiTOGpfhELrzlxpslhSsWFE3XntpQR4y20cuK6Z76YwOP9Kl0WWFdB1X3fu2KPWs5TaVMj1jrFOPAca68SOeCtGKyF9A75B98ol43wfaTo5e-ltKmgCFxR8SQfPYRG8NrcpX4hA_V040eyuYRhy_Lw4siWPL75ed6rJVT6wareUzUn59Z6iiuMfOsniB4_0pAEcx8L01r72gfD3monQExnZ7vbtHU8RVBuFzfVj7aKG1MPI8Mxh3YkkNHkK4BegRab_Zuu6bzFMKP3iQ"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/expertise_list"
+			},
+			"response": []
+		},
+		{
+			"name": "state_list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/state_list"
+			},
+			"response": []
+		},
+		{
+			"name": "city_list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "state_id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/city_list"
+			},
+			"response": []
+		},
+		{
+			"name": "remedy_products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGNmMzAwZGEyZGRmMTkxNjJhMGMwY2RlYTE1ZWZhZmY0N2VjNjI5ZGIzNTc5MDQ4YTk0YzVjMjM2YjdhMmMzYzQ1ZjRmZjllYjU0MDdlNjMiLCJpYXQiOjE2NzM0MzMwMTQuMjk4MzQzODk2ODY1ODQ0NzI2NTYyNSwibmJmIjoxNjczNDMzMDE0LjI5ODM0ODkwMzY1NjAwNTg1OTM3NSwiZXhwIjoxNzA0OTY5MDE0LjI0NDM2OTk4MzY3MzA5NTcwMzEyNSwic3ViIjoiNjIiLCJzY29wZXMiOltdfQ.ZSj4yXb-vlUZjghfazcLgBOh8r18aSVEtyFOftNE5Wgpj7ubCKn3FfwlXigEjIInHnFQ04caLVr5yplvLB4Spg22zNjdLcdPcbm3N_xl-wHkmSgZr2Ra0p7egFATb0UinIPOxi6padPDyZhbh78xD7Ok_lC0NUjaImWs-uKTWNLu6IirCJ46pfo8AEp4ixRED5hYceQcgoaMQvGHBIHoLltfp2i44XzgfsODxWZwfo2wyRNq4VwjJPbGAfLC0Uya6W6XhdPZBqRyul3rRbNB74JdnBX2uc15ZHNqW1qLd8OxuLHzQNP67r32G1zQY7kfJ4WaxVouhXKrvN1Ly_2w4DT8FfzXVqT5fjz4hvv2b101goxOta4Ar06lcnGrOJQ6-dkxqLSiRU6oRLjL9SF3Z98WIn_hlX6Tci7OP509Roq0SQ8VKItOegxmtxwtdoPGPMp0pkukXNfeHPJrNXqpf85YPdD__wszQPsmBcjSWDzbNAAt6Z-m_PEnBmLwoeSRuG2tJ0PryBT09BaVR5XuOr3O1M4VHtw7gn8rcp5EDRK5qfpRsl4AHR_hj4NuP2XwG9E_I9iIj7J-OkIhU6fk9LsZ-7Z-R8Ju4vzV1VvjIfs4b8AhitPDh-W_AUAcTZ4P7i45F66onTrJhdpqcPZ_EYIDbJi6lun5O2NvV8E3vik"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/remedy_products"
+			},
+			"response": []
+		},
+		{
+			"name": "callback_apply",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGUyOGFmMTg3ZWIxODNhZmFmMWRlY2QwYWVlOTRlMTM5MzViMzk5NzI2ZDMzNjg0YmIxNmVlNWMxYzFiOTE3MzI2NmE5ZTNiNzIxYzg3Y2YiLCJpYXQiOjE2NzM0MTQ1OTkuNTEyMjI3MDU4NDEwNjQ0NTMxMjUsIm5iZiI6MTY3MzQxNDU5OS41MTIyMzMwMTg4NzUxMjIwNzAzMTI1LCJleHAiOjE3MDQ5NTA1OTkuNDkwOTk4OTgzMzgzMTc4NzEwOTM3NSwic3ViIjoiNTEiLCJzY29wZXMiOltdfQ.rOAnG7LYaSa0KZig01S2hkXtCHu0oSY3wPU6fxnaL0ZnL6Yus5lWUeG44hPFsS4FmV9oIm8XFvvTuAwthBfZ5m1ZWARjyg1zp82uPHFTjV--Px2_7-MmrUMZEf4aG3slTvfN6p2LOffVyo1VvivCklKckXxpEfxVc1PyZnoPdMZKG9WcOGbkCDg4kfn9iKkqPi1DJFETdCVXkM1jLJCA0nlRRYUJ-KyppuIQe_uIH3coY_ACZ9InbQaqT0FdBGN38YxEKn6HHgf4j0Iyc1mdRXQH6ocY8bFU2R27buaZF2N6yBbpBKgSjjMrG8a5qRzEpm3FM5tO7cKuqpoDTxFD96UMliPNe-8w1xs_e9bZMEpPz8MObc_S7ysSlnzg6zRZTOsWN-YdxOxdAuP7F3a2vWPkNFhi_KTqFWgE2xn7rUzgj0VHRTWJDxcx3L96z12Zzv7IPp1XS_ktG_8OPMXMSrGDX-xHlMQ0Sai7iG3DjSe7zJ-eI6uplwrKlBYgwXlDDMevyL5OZxVO5vgK8PeUDGfmYCDUTaAojRriwGUI3v9sV4ersjgDifZhVZ0Tu7wvPGlQt0RimA18VwjZ_BTitUGjUmnJ2CSfYsMUziAtFVaLne9SjbCF2gIciinIdTOXniUukjB99-_NaG6K1MjNEJOl3i3a8OGYRz3G58jI-0I"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "mobile",
+							"value": "787878787878",
+							"type": "default"
+						},
+						{
+							"key": "message",
+							"value": "Hello This is testing",
+							"type": "default"
+						}
+					]
+				},
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/callback_apply"
+			},
+			"response": []
+		},
+		{
+			"name": "about_us",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGUyOGFmMTg3ZWIxODNhZmFmMWRlY2QwYWVlOTRlMTM5MzViMzk5NzI2ZDMzNjg0YmIxNmVlNWMxYzFiOTE3MzI2NmE5ZTNiNzIxYzg3Y2YiLCJpYXQiOjE2NzM0MTQ1OTkuNTEyMjI3MDU4NDEwNjQ0NTMxMjUsIm5iZiI6MTY3MzQxNDU5OS41MTIyMzMwMTg4NzUxMjIwNzAzMTI1LCJleHAiOjE3MDQ5NTA1OTkuNDkwOTk4OTgzMzgzMTc4NzEwOTM3NSwic3ViIjoiNTEiLCJzY29wZXMiOltdfQ.rOAnG7LYaSa0KZig01S2hkXtCHu0oSY3wPU6fxnaL0ZnL6Yus5lWUeG44hPFsS4FmV9oIm8XFvvTuAwthBfZ5m1ZWARjyg1zp82uPHFTjV--Px2_7-MmrUMZEf4aG3slTvfN6p2LOffVyo1VvivCklKckXxpEfxVc1PyZnoPdMZKG9WcOGbkCDg4kfn9iKkqPi1DJFETdCVXkM1jLJCA0nlRRYUJ-KyppuIQe_uIH3coY_ACZ9InbQaqT0FdBGN38YxEKn6HHgf4j0Iyc1mdRXQH6ocY8bFU2R27buaZF2N6yBbpBKgSjjMrG8a5qRzEpm3FM5tO7cKuqpoDTxFD96UMliPNe-8w1xs_e9bZMEpPz8MObc_S7ysSlnzg6zRZTOsWN-YdxOxdAuP7F3a2vWPkNFhi_KTqFWgE2xn7rUzgj0VHRTWJDxcx3L96z12Zzv7IPp1XS_ktG_8OPMXMSrGDX-xHlMQ0Sai7iG3DjSe7zJ-eI6uplwrKlBYgwXlDDMevyL5OZxVO5vgK8PeUDGfmYCDUTaAojRriwGUI3v9sV4ersjgDifZhVZ0Tu7wvPGlQt0RimA18VwjZ_BTitUGjUmnJ2CSfYsMUziAtFVaLne9SjbCF2gIciinIdTOXniUukjB99-_NaG6K1MjNEJOl3i3a8OGYRz3G58jI-0I"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/about_us"
+			},
+			"response": []
+		},
+		{
+			"name": "faq",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNGUyOGFmMTg3ZWIxODNhZmFmMWRlY2QwYWVlOTRlMTM5MzViMzk5NzI2ZDMzNjg0YmIxNmVlNWMxYzFiOTE3MzI2NmE5ZTNiNzIxYzg3Y2YiLCJpYXQiOjE2NzM0MTQ1OTkuNTEyMjI3MDU4NDEwNjQ0NTMxMjUsIm5iZiI6MTY3MzQxNDU5OS41MTIyMzMwMTg4NzUxMjIwNzAzMTI1LCJleHAiOjE3MDQ5NTA1OTkuNDkwOTk4OTgzMzgzMTc4NzEwOTM3NSwic3ViIjoiNTEiLCJzY29wZXMiOltdfQ.rOAnG7LYaSa0KZig01S2hkXtCHu0oSY3wPU6fxnaL0ZnL6Yus5lWUeG44hPFsS4FmV9oIm8XFvvTuAwthBfZ5m1ZWARjyg1zp82uPHFTjV--Px2_7-MmrUMZEf4aG3slTvfN6p2LOffVyo1VvivCklKckXxpEfxVc1PyZnoPdMZKG9WcOGbkCDg4kfn9iKkqPi1DJFETdCVXkM1jLJCA0nlRRYUJ-KyppuIQe_uIH3coY_ACZ9InbQaqT0FdBGN38YxEKn6HHgf4j0Iyc1mdRXQH6ocY8bFU2R27buaZF2N6yBbpBKgSjjMrG8a5qRzEpm3FM5tO7cKuqpoDTxFD96UMliPNe-8w1xs_e9bZMEpPz8MObc_S7ysSlnzg6zRZTOsWN-YdxOxdAuP7F3a2vWPkNFhi_KTqFWgE2xn7rUzgj0VHRTWJDxcx3L96z12Zzv7IPp1XS_ktG_8OPMXMSrGDX-xHlMQ0Sai7iG3DjSe7zJ-eI6uplwrKlBYgwXlDDMevyL5OZxVO5vgK8PeUDGfmYCDUTaAojRriwGUI3v9sV4ersjgDifZhVZ0Tu7wvPGlQt0RimA18VwjZ_BTitUGjUmnJ2CSfYsMUziAtFVaLne9SjbCF2gIciinIdTOXniUukjB99-_NaG6K1MjNEJOl3i3a8OGYRz3G58jI-0I"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/faq"
+			},
+			"response": []
+		},
+		{
+			"name": "notification",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOGNmMzAwZGEyZGRmMTkxNjJhMGMwY2RlYTE1ZWZhZmY0N2VjNjI5ZGIzNTc5MDQ4YTk0YzVjMjM2YjdhMmMzYzQ1ZjRmZjllYjU0MDdlNjMiLCJpYXQiOjE2NzM0MzMwMTQuMjk4MzQzODk2ODY1ODQ0NzI2NTYyNSwibmJmIjoxNjczNDMzMDE0LjI5ODM0ODkwMzY1NjAwNTg1OTM3NSwiZXhwIjoxNzA0OTY5MDE0LjI0NDM2OTk4MzY3MzA5NTcwMzEyNSwic3ViIjoiNjIiLCJzY29wZXMiOltdfQ.ZSj4yXb-vlUZjghfazcLgBOh8r18aSVEtyFOftNE5Wgpj7ubCKn3FfwlXigEjIInHnFQ04caLVr5yplvLB4Spg22zNjdLcdPcbm3N_xl-wHkmSgZr2Ra0p7egFATb0UinIPOxi6padPDyZhbh78xD7Ok_lC0NUjaImWs-uKTWNLu6IirCJ46pfo8AEp4ixRED5hYceQcgoaMQvGHBIHoLltfp2i44XzgfsODxWZwfo2wyRNq4VwjJPbGAfLC0Uya6W6XhdPZBqRyul3rRbNB74JdnBX2uc15ZHNqW1qLd8OxuLHzQNP67r32G1zQY7kfJ4WaxVouhXKrvN1Ly_2w4DT8FfzXVqT5fjz4hvv2b101goxOta4Ar06lcnGrOJQ6-dkxqLSiRU6oRLjL9SF3Z98WIn_hlX6Tci7OP509Roq0SQ8VKItOegxmtxwtdoPGPMp0pkukXNfeHPJrNXqpf85YPdD__wszQPsmBcjSWDzbNAAt6Z-m_PEnBmLwoeSRuG2tJ0PryBT09BaVR5XuOr3O1M4VHtw7gn8rcp5EDRK5qfpRsl4AHR_hj4NuP2XwG9E_I9iIj7J-OkIhU6fk9LsZ-7Z-R8Ju4vzV1VvjIfs4b8AhitPDh-W_AUAcTZ4P7i45F66onTrJhdpqcPZ_EYIDbJi6lun5O2NvV8E3vik"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/notification"
+			},
+			"response": []
+		},
+		{
+			"name": "banner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/banner"
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": []
+		},
+		{
+			"name": "pincode_list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "city_id",
+							"value": "",
+							"type": "default"
+						}
+					]
+				},
+				"url": "http://172.16.0.238/~astrorahi/astrorahi/api/pincode_list"
+			},
+			"response": []
+		}
+	]
+}

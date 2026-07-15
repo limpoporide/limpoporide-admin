@@ -1,0 +1,83 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\AdminController;
+use Illuminate\Support\Facades\File;
+
+    
+    Route::match(['get', 'post'], '/admin', [AuthController::class, 'login']);
+    Route::match(['get', 'post'], 'admin/login', [AuthController::class, 'login']);
+    
+    Route::group(['namespace' => 'Admin','prefix'=>'admin', 'middleware'=>['afterLoginAuth']], function () {
+        
+        Route::match(['get', 'post'], 'logout', [AuthController::class, 'logout']);
+        Route::match(['get', 'post'], 'dashboard', [AdminController::class, 'index']);
+        Route::match(['get', 'post'], 'profile', [AuthController::class, 'profile']);
+        
+        Route::match(['get', 'post'], 'normal_users', [AdminController::class, 'normal_users']);
+        Route::match(['get', 'post'], 'user_change_status', [AdminController::class, 'user_change_status']);
+        
+        Route::match(['get', 'post'], 'edit_user', [AdminController::class, 'edit_user']);
+        Route::match(['get', 'post'], 'delete_user', [AdminController::class, 'delete_user']);
+        
+        Route::match(['get', 'post'], 'awative_drivers', [AdminController::class, 'awative_drivers']);
+        Route::match(['get', 'post'], 'manage_drivers', [AdminController::class, 'manage_drivers']);
+        Route::match(['get','post'],'/edit_driver_details/{id}',[AdminController::class, 'edit_driver_details']);
+        Route::match(['get','post'],'/update_driver_detail/',[AdminController::class, 'update_driver_detail']);
+        Route::match(['get','post'],'/driver_details/{id}',[AdminController::class, 'driver_details']);
+        
+        Route::match(['get', 'post'], 'get-user-details', [AdminController::class, 'getUserDetails']);
+        
+        Route::match(['get', 'post'], 'about_us', [AdminController::class, 'about_us'])->name('admin.about_us');
+        Route::match(['get', 'post'], 'contact_us', [AdminController::class, 'contact_us'])->name('admin.contact_us');
+        Route::match(['get', 'post'], 'terms_conditions', [AdminController::class, 'terms_conditions'])->name('admin.terms_conditions');
+        Route::match(['get', 'post'], 'privacy_policy', [AdminController::class, 'privacy_policy'])->name('admin.privacy_policy');
+        Route::match(['get', 'post'], 'faqs', [AdminController::class, 'faqs'])->name('admin.faqs');
+        Route::match(['get', 'post'], 'ride_cancel_reasons', [AdminController::class, 'ride_cancel_reasons'])->name('admin.ride_cancel_reasons');
+
+        Route::match(['get', 'post'], 'cancel_reason_change_status', [AdminController::class, 'cancel_reason_change_status']);
+        Route::match(['get', 'post'], 'faqs_change_status', [AdminController::class, 'faqs_change_status']);
+        Route::match(['get', 'post'], 'delete_reason', [AdminController::class, 'delete_reason']);
+        Route::match(['get', 'post'], 'delete_faqs', [AdminController::class, 'delete_faqs']);
+        
+        // Map
+        Route::match(['get','post'],'/show_drivers_map',[AdminController::class,'show_drivers_map'])->name('show_drivers_map');
+        Route::match(['get','post'],'/driverLocations',[AdminController::class,'driverLocations'])->name('driverLocations');
+        
+        // Drivers
+        Route::match(['get','post'],'/new_driver_list',[AdminController::class, 'new_driver_list']);
+        Route::match(['get','post'],'/approved_drivers_list',[AdminController::class, 'approved_drivers_list']);
+        
+        /*licence status check*/
+        Route::match(['get','post'],'/driver_licence_status',[AdminController::class, 'driver_licence_status']);
+        Route::match(['get','post'],'/driver_idproof_status',[AdminController::class, 'driver_idproof_status']);
+        Route::match(['get','post'],'/driver_rc_status',[AdminController::class, 'driver_rc_status']);
+        Route::match(['get','post'],'/driver_pollution_status',[AdminController::class, 'driver_pollution_status']);
+        Route::match(['get','post'],'/driver_audit_status',[AdminController::class, 'driver_audit_status']);
+        Route::match(['get','post'],'/change_reupload_status',[AdminController::class, 'change_reupload_status']);
+        
+        /* All type vehicles */
+        Route::match(['get','post'],'/vehicle_all_types',[AdminController::class, 'vehicle_all_types']);
+        Route::match(['get','post'],'/add_type_vehicle',[AdminController::class, 'add_type_vehicle']);
+        Route::match(['get','post'],'/delete_type_vehicle',[AdminController::class, 'delete_type_vehicle']);
+        Route::match(['get','post'],'/change_vehicle_type_status',[AdminController::class, 'change_vehicle_type_status']);
+        Route::match(['get','post'],'/change_manage_fare_status',[AdminController::class, 'change_manage_fare_status']);
+        
+        // Bookings
+        Route::match(['get','post'],'/pending_booking',[AdminController::class,'pending_booking']);
+        Route::match(['get','post'],'/complete_booking',[AdminController::class,'complete_booking']);
+        Route::match(['get','post'],'/cancelled_booking',[AdminController::class,'cancelled_booking']);
+
+        Route::match(['get','post'],'/booking_payments',[AdminController::class,'booking_payments']);
+        Route::match(['get','post'],'/manage_comission',[AdminController::class,'manage_comission']);
+        
+        Route::match(['get', 'post'], 'all_notifications', [AdminController::class, 'all_notifications'])->name('admin.all_notifications');
+        Route::match(['get', 'post'], 'delete_notifications', [AdminController::class, 'delete_notifications']);
+        
+        // Withdraw
+        Route::get('/withdrawal_request',[AdminController::class,'withdrawal_request']);
+        Route::match(['get','post'],'/third_party',[AdminController::class, 'third_party'])->name('admin.third_party');
+        
+        
+    });

@@ -1,0 +1,2 @@
+[24-Jun-2026 11:44:46 Asia/Kolkata] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Admin\AdminController::add_new_drivers() in /home/limpoporide/public_html/limpopo_new/app/Http/Controllers/Admin/AdminController.php on line 744
+[30-Jun-2026 16:50:48 Asia/Kolkata] PHP Fatal error:  Cannot redeclare App\Http\Controllers\Admin\AdminController::approved_drivers_list() in /home/limpoporide/public_html/limpopo_new/app/Http/Controllers/Admin/AdminController.php on line 916

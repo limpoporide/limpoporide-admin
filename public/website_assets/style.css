@@ -1,0 +1,393 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+body {
+        font-family: Inter, sans-serif
+}
+.section-title{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+#header {
+    background-color: black;
+    padding-bottom: 0%;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-weight:700;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: white;
+}
+.choose-div h5{
+    color:black;
+    font-weight:600;
+}
+.step-box h6{
+    font-weight:600;
+}
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 2.5rem;
+        padding-left: 1.5rem;
+    }
+}
+   .taxi-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .carousel-item {
+            height: 500px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .carousel-caption {
+            bottom: 50%;
+            transform: translateY(50%);
+            text-align: left;
+            left: 10%;
+            right: 10%;
+        }
+        
+        .carousel-caption h3 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: wheat;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .carousel-caption p {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            max-width: 600px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .btn-taxi {
+            background-color: var(--primary);
+            color: var(--secondary);
+            border: none;
+            padding: 10px 25px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-taxi:hover {
+            background-color: #ffca28;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;
+        }
+        
+        .booking-form {
+            background-color: rgba(255,255,255,0.9);
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: -80px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .form-control {
+            border-radius: 30px;
+            padding: 12px 20px;
+            border: 1px solid #ddd;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--secondary);
+        }
+        
+        @media (max-width: 768px) {
+            .carousel-item {
+                height: 400px;
+            }
+            
+            .carousel-caption h3 {
+                font-size: 1.8rem;
+            }
+            
+            .carousel-caption p {
+                font-size: 1rem;
+            }
+            
+            .booking-form {
+                margin-top: 0;
+                margin-bottom: 30px;
+            }
+        }
+.btn-outline-secondary {
+    color: white;
+}
+
+.section-title h1 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.section-title p {
+    font-size: 18px;
+    color: #6c7c93;
+
+}
+.detail-page{
+    color: #777777;
+}
+.detail-page h1{
+    color:black;
+}
+.detail-page h3{
+    color: #a60510;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 32px !important;
+}
+.detail-page ul{
+ list-style: circle;
+
+   /* margin: 20px; */
+    padding: 20px;
+}
+.red-title {
+    /* color: #a60510; */
+    background: linear-gradient(to right, #c8a621,#a60510, #a60510);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.choose-div {
+    border: 1px solid #edebeb;
+    padding: 20px;
+    border-radius: 20px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+}
+
+.choose-div:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.choose-div h3 {
+    color: #a60510;
+    font-size: 20px;
+}
+
+.services-area {
+    text-align: center;
+}
+
+.choose-icon {
+    background-color: #a60510;
+    color: #ffffff;
+    display: inline;
+    padding: 14px 15px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+.choose-div a{
+    color: #777777;
+    font-size: 18px;
+}
+.choose-div {
+    color: #777777;
+    font-size: 18px;
+    height: 250px;
+}
+.choose-div a:hover{
+    color: #a60510;
+}
+
+/* Footer Section */
+.section-gap{
+        padding: 70px 0 20px 0px;
+}
+
+.single-footer-widget ul li a {
+    color: #777777;
+        font-size: 14px;
+    font-weight: 300;
+    line-height: 1.8rem;
+}
+
+.single-footer-widget ul li a:hover{
+    color: #f9d700;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-area {
+    background-color: #000000;
+}
+.single-footer-widget p{
+    color: #777777;
+}
+.single-footer-widget ul li a {
+    color: #777777;
+    text-decoration: none;
+}
+.footer-text {
+    text-align: center;
+    margin-bottom: 0px;
+        color: #777777;
+}
+.footer-area h6 {
+        color: #777777;
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.footer-social a{
+    padding:5px 8px ;
+    background-color: #a60510;
+    color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+    
+}
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Horizontal line behind the steps */
+.steps-container::before {
+    content: "";
+    position: absolute;
+    top: 90px; /* aligns with icons */
+    left: 8%;
+    right: 8%;
+    height: 2px;
+    background: #a7e3d4; /* light mint green like screenshot */
+    z-index: 1;
+}
+
+.step-box {
+    width: 22%;
+    position: relative;
+    z-index: 2; /* makes icons appear above the line */
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    background: #ffcb45;
+    color: #000;
+    border-radius: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+}
+
+/* Placeholder rectangle for icons (replace with your icons) */
+.step-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px auto;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #e0f3ff, #d4f7ef);
+    border: 2px solid #b9dbe5;
+      display: flex;
+    align-items: center;
+    justify-content: center;    font-size: 35px;
+
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #c8a621;
+font-weight: 700;}
+/* Slider Styles */
+        .taxi-slider {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .carousel-item {
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .carousel-caption {
+            bottom: 50%;
+            transform: translateY(50%);
+            text-align: left;
+            left: 10%;
+            right: 10%;
+        }
+        
+        .carousel-caption h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .carousel-caption p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .btn-taxi {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-taxi:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        
+        .carousel-control-prev, .carousel-control-next {
+            width: 5%;
+        }
+        .step-box p{
+            font-size:14px;
+            color:#777777;
+        }
+        
+        .choose-div h3 {font-weight:600;}
